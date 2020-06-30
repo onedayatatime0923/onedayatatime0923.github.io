@@ -4,7 +4,3 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-checkbox	_site/public/js/script.js	/^  var checkbox = document.querySelector('#sidebar-checkbox');$/;"	v
-checkbox	public/js/script.js	/^  var checkbox = document.querySelector('#sidebar-checkbox');$/;"	v
-sidebar	_site/public/js/script.js	/^  var sidebar = document.querySelector('#sidebar');$/;"	v
-sidebar	public/js/script.js	/^  var sidebar = document.querySelector('#sidebar');$/;"	v
