@@ -11,54 +11,42 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+
+* **Ph.D. in Electrical and Computer Engineering**, University of California, Berkeley — Berkeley, CA *(Present)*
+  * Lab: The Donald O. Pederson Center for Electronic Systems Design
+
+* **B.S. in Electrical Engineering**, National Taiwan University — Taipei, Taiwan *(2020)*
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* **Software Engineering Intern**, Image and Vision Computing Lab — Prof. Chu-Song Chen, Taipei, Taiwan *(Jun 2018 – Sep 2018)*
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
+* **Undergraduate Researcher**, Electronic Design Automation Lab — Prof. Yao-Wen Chang, Taipei, Taiwan *(Sep 2018 – Feb 2020)*
+
+* **Undergraduate Researcher**, Applied Logic and Computation in System Design Lab — Prof. Jie-Hong Roland Jiang, Taipei, Taiwan
+
+* **Undergraduate Researcher**, Vision & Learning Lab — Prof. Yu-Chiang Frank Wang, Taipei, Taiwan *(Feb 2018 – Sep 2018)*
+
+* **Undergraduate **Researcher**, Speech Processing and Machine Learning Lab — Prof. Hung-Yi Lee, Taipei, Taiwan
+
+* **Selected Projects & Competitions**
+  * Physical Design for Nanometer ICs — Apr 2019  
+  * Dexon Hackathon — Jan 2019  
+  * Arm Design Contest — Sep 2018  
+  * Digital Circuits and Systems Laboratory — Feb 2018
+
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Programming: Python, C/C++, MATLAB, Verilog
+* Tools: Git, PyTorch, TensorFlow, Cadence, Synopsys
+* Research: Formal Verification, Neural Network Verification, Cyber-Physical Systems
+* Languages: English, Mandarin Chinese
 
 Publications
 ======
+
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
