@@ -9,11 +9,12 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Your Name / Site Title"
+title                    : "Kevin Chiaming Chang"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://academicpages.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
+name                     : &name "Kevin Chiaming Chang"
+description              : &description "I am a researcher specializing in Cyber-Physical Systems (CPS), with a focus on the formal design and verification of intelligent control architectures. My work integrates assume–guarantee contract frameworks with neural network verification to ensure safety and reliability in autonomous and learning-enabled systems.
+Broadly, my interests include: Formal specification and compositional reasoning for CPS, Scalable assume–guarantee verification methods, Verified neural network controllers and safe learning-based control, Applications to robotics, distributed systems, and autonomous infrastructure" # Update this with a general description of your site, this is the default if not overridden by a page
+url                      : https://onedayatatime0923.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
@@ -30,7 +31,7 @@ author:
   location         : "Earth"
   employer         : "Red Brick University"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "kevin.cm.chang@berkeley.edu" 
 
   # Academic websites
   academia         : # URL
