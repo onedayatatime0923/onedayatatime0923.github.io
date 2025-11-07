@@ -3,7 +3,7 @@ title: "Time-Division Multiplexing Based System-Level FPGA Routing"
 collection: publications
 permalink: /publication/fpga-routing
 date: 2021-11-01
-venue: "Proceedings of [Conference or Journal Name]"
+venue: "2021 IEEE/ACM International Conference On Computer Aided Design (ICCAD)"
 ---
 
 This work presents a **system-level FPGA routing framework** based on **time-division multiplexing (TDM)**, enabling efficient sharing of interconnect resources across multiple functional modules.  

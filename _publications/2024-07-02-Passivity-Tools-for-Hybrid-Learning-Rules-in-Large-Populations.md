@@ -3,7 +3,6 @@ title: "Passivity Tools for Hybrid Learning Rules in Large Populations"
 collection: publications
 permalink: /publication/passivity-hybrid-learning
 date: 2024-07-02
-venue: "Proceedings of [Conference or Journal Name]"
 ---
 
 This paper develops a **passivity-based analytical framework** for studying the stability and convergence of **hybrid learning rules** in large-scale population systems.  
