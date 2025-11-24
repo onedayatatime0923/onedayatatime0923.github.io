@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Welcome to my academic homepage! I am a Ph.D. student in the **Department of Electrical Engineering and Computer Sciences (EECS)** at the **University of California, Berkeley**, advised by **Prof. Pierluigi Nuzzo**.  
+I am a Ph.D. student in the **Department of Electrical Engineering and Computer Sciences (EECS)** at the **University of California, Berkeley**, advised by **Prof. Pierluigi Nuzzo**.  
 My research focuses on the intersection of **Cyber-Physical Systems (CPS)**, **formal verification**, and **machine learning**, with an emphasis on ensuring safety and reliability in learning-enabled autonomous systems.
 
 My current work investigates:
