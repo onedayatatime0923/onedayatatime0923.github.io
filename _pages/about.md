@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Kevin C. Chang — Research in Cyber-Physical Systems, Verification, and Learning-Based Control"
+title: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
