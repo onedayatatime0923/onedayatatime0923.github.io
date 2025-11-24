@@ -27,7 +27,3 @@ Get in Touch
 - 🏛️ **Affiliation:** UC Berkeley, Department of Electrical Engineering and Computer Sciences  
 - 💼 [Google Scholar](https://scholar.google.com/citations?user=mJg5s2oAAAAJ&hl=en) [GitHub](https://github.com/onedayatatime0923) [LinkedIn](https://www.linkedin.com/in/chia-ming-chang)
 
----
-
-This website is powered by the [**Academic Pages**](https://github.com/academicpages/academicpages.github.io) template and hosted via [GitHub Pages](https://pages.github.com).  
-Academic Pages is an open-source, data-driven template built on the [Minimal Mistakes Jekyll theme](https://mmistakes.github.io/minimal-mistakes/), extended for academic content such as **publications, teaching, and projects**.
