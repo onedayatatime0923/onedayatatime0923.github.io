@@ -25,5 +25,5 @@ Get in Touch
 ======
 - 📧 **Email:** kevinchang@berkeley.edu  
 - 🏛️ **Affiliation:** UC Berkeley, Department of Electrical Engineering and Computer Sciences  
-- 💼 [Google Scholar](https://scholar.google.com/citations?user=mJg5s2oAAAAJ&hl=en) [GitHub](https://github.com/onedayatatime0923) [LinkedIn](https://www.linkedin.com/in/chia-ming-chang)
+- 💼 [Google Scholar](https://scholar.google.com/citations?user=mJg5s2oAAAAJ&hl=en) [GitHub](https://github.com/onedayatatime0923) [LinkedIn](https://www.linkedin.com/in/kevincmchang/)
 
