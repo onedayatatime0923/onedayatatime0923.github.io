@@ -10,7 +10,7 @@ This work presents a **system-level FPGA routing framework** based on **time-div
 By formulating routing as a **resource scheduling problem**, the proposed method reduces hardware congestion and improves overall FPGA utilization without compromising timing constraints.
 
 Key contributions:
-* Introduces a TDM-based abstraction for global interconnect reuse.  
-* Implements a scalable routing algorithm compatible with commercial FPGA toolchains.  
-* Demonstrates reduced routing complexity and improved performance on large benchmark designs.
-
+* Introduces a TDM-based abstraction for global interconnect reuse across system-level FPGA designs.
+* Casts routing as a coordinated optimization and scheduling problem rather than only a low-level wiring problem.
+* Implements a scalable routing flow compatible with realistic FPGA toolchains and large contest-style benchmarks.
+* Shows how interconnect sharing can reduce congestion and improve resource efficiency without sacrificing timing feasibility.

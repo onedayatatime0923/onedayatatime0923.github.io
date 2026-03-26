@@ -6,13 +6,10 @@ date: 2023-12-13
 venue: "2023 62nd IEEE Conference on Decision and Control (CDC)"
 ---
 
-This work presents a **provably exact and cost-efficient framework** for converting **neural network controllers** into **decision tree controllers** that preserve the original system’s functional behavior.  
-The proposed transformation enables interpretable, verifiable, and real-time-deployable control logic while maintaining accuracy and scalability.
+This paper introduces an exact transformation procedure that converts neural network controllers into decision tree controllers without changing the underlying control behavior. The result is a controller representation that is dramatically easier to inspect and reason about, while still remaining suitable for solver-based verification and embedded deployment.
 
 Key contributions:
-* Formulates neural-to-tree conversion as an **exact equivalence-preserving transformation** problem.  
-* Introduces an **optimization-driven cost metric** to minimize the complexity of the resulting decision tree.  
-* Provides **formal guarantees** of functional equivalence across all network activation patterns.  
-* Demonstrates practical scalability on benchmark control systems, including **CartPole**, **MountainCar**, and **CarRacing**.
-
-[Read Paper on arXiv](https://arxiv.org/abs/2401.xxxxx)
+* Formulates neural-to-tree conversion as an exact equivalence-preserving transformation problem.
+* Introduces a cost-aware optimization objective to control the size and complexity of the resulting tree.
+* Provides formal guarantees that the transformed controller matches the original controller across activation regions.
+* Demonstrates closed-loop applicability on benchmark control tasks including CartPole, MountainCar, and CarRacing.

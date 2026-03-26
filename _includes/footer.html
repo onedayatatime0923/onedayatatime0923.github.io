@@ -8,7 +8,7 @@
   <div class="page__footer-follow">
     <ul class="social-icons">
       {% if site.author.email %}
-        <li><a href="mailto:{{ site.author.email }}">Email</a></li>
+        <li><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
       {% endif %}
       {% if site.author.googlescholar %}
         <li><a href="{{ site.author.googlescholar }}">Scholar</a></li>

@@ -2,13 +2,13 @@
 title: "Passivity Tools for Hybrid Learning Rules in Large Populations"
 collection: publications
 permalink: /publication/passivity-hybrid-learning
-date: 2024-07-02
+date: 2026-01-01
+venue: "Automatica"
 ---
 
-This paper develops a **passivity-based analytical framework** for studying the stability and convergence of **hybrid learning rules** in large-scale population systems.  
-By leveraging the concepts of **energy functions** and **incremental passivity**, the proposed tools enable systematic reasoning about emergent behaviors in **multi-agent learning dynamics** that combine continuous adaptation and discrete updates.
+This paper develops passivity-based analytical tools for reasoning about hybrid learning rules in large populations, where dynamics may combine continuous adaptation with discrete update mechanisms. The work focuses on scalable stability analysis for collective learning behavior in systems that are too large or too heterogeneous for naive equilibrium analysis.
 
 Highlights:
-* Establishes generalized passivity conditions for hybrid population learning.  
-* Characterizes convergence to equilibrium under mixed continuous–discrete dynamics.  
-* Provides scalable tools for verifying stability in distributed adaptive systems.
+* Establishes generalized passivity conditions for hybrid and population-level learning dynamics.
+* Characterizes convergence behavior under mixed continuous-discrete update rules.
+* Provides a systems-theoretic route to certifying stability in distributed adaptive and multi-agent settings.

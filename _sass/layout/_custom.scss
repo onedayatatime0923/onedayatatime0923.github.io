@@ -417,8 +417,17 @@ a {
   display: inline-flex;
 }
 
+.page__footer-follow .social-icons {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem 1rem;
+  justify-content: flex-end;
+}
+
 .page__footer-follow a {
   color: #fff8f2;
+  display: inline-flex;
   opacity: 0.9;
 }
 
