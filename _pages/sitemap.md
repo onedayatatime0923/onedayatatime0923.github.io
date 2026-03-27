@@ -7,28 +7,24 @@ author_profile: true
 
 {% include base_path %}
 
-A list of the pages and collections found on the site. For you robots out there, there is an [XML version]({{ base_path }}/sitemap.xml) available for digesting as well.
+A list of the pages and collections found on the site.
 
+{% assign visible_pages = site.pages | where_exp: "item", "item.sitemap != false" %}
+{% if visible_pages.size > 0 %}
 <h2>Pages</h2>
-{% for post in site.pages %}
-  {% unless post.sitemap == false %}
+{% for post in visible_pages %}
   {% include archive-single.html %}
-  {% endunless %}
 {% endfor %}
-
-{% capture written_label %}'None'{% endcapture %}
+{% endif %}
 
 {% for collection in site.collections %}
 {% unless collection.output == false or collection.label == "posts" or collection.label == "portfolio" or collection.label == "teaching" or collection.label == "talks" %}
-  {% capture label %}{{ collection.label }}{% endcapture %}
-  {% if label != written_label %}
-  <h2>{{ label }}</h2>
-  {% capture written_label %}{{ label }}{% endcapture %}
+  {% assign visible_docs = collection.docs | where_exp: "item", "item.sitemap != false" %}
+  {% if visible_docs.size > 0 %}
+  <h2>{{ collection.label }}</h2>
+  {% for post in visible_docs %}
+  {% include archive-single.html %}
+  {% endfor %}
   {% endif %}
 {% endunless %}
-{% for post in collection.docs %}
-  {% unless collection.output == false or collection.label == "posts" or collection.label == "portfolio" or collection.label == "teaching" or collection.label == "talks" or post.sitemap == false %}
-  {% include archive-single.html %}
-  {% endunless %}
-{% endfor %}
 {% endfor %}
