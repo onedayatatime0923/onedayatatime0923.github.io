@@ -160,6 +160,14 @@ a {
     height: auto;
     overflow-y: visible;
   }
+
+  @include breakpoint($large) {
+    margin-left: -1rem;
+  }
+
+  @include breakpoint($x-large) {
+    margin-left: -1.5rem;
+  }
 }
 
 .author-card {
