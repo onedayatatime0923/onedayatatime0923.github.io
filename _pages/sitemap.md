@@ -19,7 +19,7 @@ A list of the pages and collections found on the site. For you robots out there,
 {% capture written_label %}'None'{% endcapture %}
 
 {% for collection in site.collections %}
-{% unless collection.output == false or collection.label == "posts" or collection.label == "portfolio" %}
+{% unless collection.output == false or collection.label == "posts" or collection.label == "portfolio" or collection.label == "teaching" or collection.label == "talks" %}
   {% capture label %}{{ collection.label }}{% endcapture %}
   {% if label != written_label %}
   <h2>{{ label }}</h2>
@@ -27,7 +27,7 @@ A list of the pages and collections found on the site. For you robots out there,
   {% endif %}
 {% endunless %}
 {% for post in collection.docs %}
-  {% unless collection.output == false or collection.label == "posts" or collection.label == "portfolio" or post.sitemap == false %}
+  {% unless collection.output == false or collection.label == "posts" or collection.label == "portfolio" or collection.label == "teaching" or collection.label == "talks" or post.sitemap == false %}
   {% include archive-single.html %}
   {% endunless %}
 {% endfor %}

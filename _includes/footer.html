@@ -19,9 +19,6 @@
       {% if site.author.linkedin %}
         <li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a></li>
       {% endif %}
-      {% if site.atom_feed.hide != true %}
-        <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}">Feed</a></li>
-      {% endif %}
     </ul>
   </div>
 </div>
