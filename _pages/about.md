@@ -13,7 +13,7 @@ redirect_from:
   <p class="home-hero__lead">I am a Ph.D. student in the Department of Electrical Engineering and Computer Sciences at the University of California, Berkeley, advised by Prof. Pierluigi Nuzzo. My work sits at the intersection of formal methods, optimization, and machine learning for safety-critical autonomy.</p>
   <div class="home-hero__actions">
     <a class="btn btn--primary" href="/publications/">View Publications</a>
-    <a class="btn btn--light-outline" href="/cv/">Open CV</a>
+    <a class="btn btn--primary" href="/cv/">Open CV</a>
   </div>
 </section>
 
