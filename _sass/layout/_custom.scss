@@ -47,9 +47,15 @@ a {
 }
 
 .btn--light-outline {
-  border: 1px solid rgba(93, 67, 50, 0.2);
-  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(141, 62, 40, 0.45);
+  background: rgba(187, 90, 60, 0.16);
   color: #3c2f29;
+}
+
+.btn--light-outline:hover,
+.btn--light-outline:focus {
+  background: rgba(187, 90, 60, 0.24);
+  color: #241b15;
 }
 
 .masthead {
