@@ -9,6 +9,21 @@ redirect_from:
 
 {% include base_path %}
 
+<style>
+  .cv-page,
+  .cv-page p,
+  .cv-page li,
+  .cv-page strong,
+  .cv-page em,
+  .cv-page h2,
+  .cv-page h3,
+  .cv-page a {
+    color: #000;
+  }
+</style>
+
+<div class="cv-page">
+
 ## Summary
 
 Ph.D. candidate at UC Berkeley building scalable formal-methods and machine-learning research for safety-critical systems. Experience spans neural network verification, contract-based design, optimization, and interpretable controller synthesis, with a focus on translating theory into solver-backed algorithms and rigorous empirical evaluation.
@@ -20,22 +35,6 @@ Ph.D. candidate at UC Berkeley building scalable formal-methods and machine-lear
 * Programming: Python, SystemVerilog, MATLAB, C++
 * ML / Data: PyTorch, scikit-learn, reinforcement learning, semantic segmentation, domain adaptation
 * Tools: Gurobi, CVX, JasperGold, Cadence Xcelium, Genus, VCS
-
-## Research Experience
-
-### Graduate Student Researcher, DesCyPhy Lab, Prof. Pierluigi Nuzzo
-Berkeley, CA | January 2021 - Present
-
-* Neural Controller Transformation for Formal Verification: Developed a provably exact transformation from ReLU neural-network controllers to soft decision-tree representations, making solver-based verification more scalable and interpretable. Proved correctness and demonstrated closed-loop safety certification on CartPole, MountainCar, and CarRacing benchmarks, resulting in a CDC 2023 publication.
-* Robustness Contracts for Learning-Enabled CPS: Introduced contract-based robustness specifications that decouple plant dynamics from neural controllers for compositional safety verification. Designed an SMT-based refinement algorithm that incrementally tightens layer-wise abstraction bounds to accelerate safe-reachability analysis under bounded uncertainty.
-* Assume-Guarantee Contract Optimization: Formulated MILP-based contract-refinement techniques to automatically synthesize tighter assume-guarantee specifications. Improved realizability and reduced verification complexity in multi-agent autonomous-driving scenarios.
-* Deep RL Controller Distillation for Verifiability: Developed a controller-distillation framework that extracts compact, interpretable control laws from deep RL policies. Applied optimization-based refinement to preserve task performance while improving closed-loop stability and formal verifiability, resulting in an Allerton 2022 publication.
-
-### Undergraduate Researcher, Electronic Design Automation Lab, Prof. Yao-Wen Chang
-Taipei, Taiwan | September 2018 - February 2020
-
-* Implemented an initial detailed-routing engine with concurrent track assignment and multithreaded routing; handled designs with up to 1M nets using less than 64 GB of memory in 10 hours on most benchmarks.
-* Built a routability-driven hybrid global router and a system-level FPGA router with TDM optimization; contributed to 2nd place at ACM ISPD 2019, Top 5 / Honorable Mention at ICCAD 2019, and an ICCAD 2021 publication.
 
 ## Education
 
@@ -64,6 +63,22 @@ Taipei, Taiwan | September 2018 - February 2020
 
 ## Publications
 
+### Research Experience
+
+#### Graduate Student Researcher, DesCyPhy Lab, Prof. Pierluigi Nuzzo
+Berkeley, CA | January 2021 - Present
+
+* Neural Controller Transformation for Formal Verification: Developed a provably exact transformation from ReLU neural-network controllers to soft decision-tree representations, making solver-based verification more scalable and interpretable. Proved correctness and demonstrated closed-loop safety certification on CartPole, MountainCar, and CarRacing benchmarks, resulting in a CDC 2023 publication.
+* Robustness Contracts for Learning-Enabled CPS: Introduced contract-based robustness specifications that decouple plant dynamics from neural controllers for compositional safety verification. Designed an SMT-based refinement algorithm that incrementally tightens layer-wise abstraction bounds to accelerate safe-reachability analysis under bounded uncertainty.
+* Assume-Guarantee Contract Optimization: Formulated MILP-based contract-refinement techniques to automatically synthesize tighter assume-guarantee specifications. Improved realizability and reduced verification complexity in multi-agent autonomous-driving scenarios.
+* Deep RL Controller Distillation for Verifiability: Developed a controller-distillation framework that extracts compact, interpretable control laws from deep RL policies. Applied optimization-based refinement to preserve task performance while improving closed-loop stability and formal verifiability, resulting in an Allerton 2022 publication.
+
+#### Undergraduate Researcher, Electronic Design Automation Lab, Prof. Yao-Wen Chang
+Taipei, Taiwan | September 2018 - February 2020
+
+* Implemented an initial detailed-routing engine with concurrent track assignment and multithreaded routing; handled designs with up to 1M nets using less than 64 GB of memory in 10 hours on most benchmarks.
+* Built a routability-driven hybrid global router and a system-level FPGA router with TDM optimization; contributed to 2nd place at ACM ISPD 2019, Top 5 / Honorable Mention at ICCAD 2019, and an ICCAD 2021 publication.
+
 <ul>{% for post in site.publications reversed %}
   {% include archive-single-cv.html %}
 {% endfor %}</ul>
@@ -78,4 +93,5 @@ Taipei, Taiwan | September 2018 - February 2020
   Placed 2nd among 33 international teams in a leading EDA routing competition.
 * **2nd Place and Best Popularity Award**, Arm Design Contest | November 2018
   Placed in the top 3 among 130+ teams in a hardware and embedded-systems design competition.
-  
+
+</div>
