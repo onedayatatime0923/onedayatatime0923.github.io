@@ -17,7 +17,7 @@ The site is based on Academic Pages / Minimal Mistakes, but has been customized 
 
 ## Repository Structure
 
-- `_pages/`: top-level pages such as the homepage, publications page, and CV page
+- `_pages/`: top-level pages such as the homepage, publications page, and sitemap
 - `_publications/`: publication entries rendered into the publications section
 - `_data/`: structured site data, including the masthead navigation
 - `_includes/` and `_layouts/`: shared Jekyll templates
