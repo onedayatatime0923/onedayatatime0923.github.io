@@ -42,13 +42,123 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+:root {
+  --berkeley-blue: #003262;
+  --berkeley-blue-deep: #001f3f;
+  --berkeley-blue-soft: #1f5a96;
+  --berkeley-gold: #fdb515;
+  --berkeley-gold-soft: #ffe08a;
+  --berkeley-cream: #fff8e1;
+  --berkeley-paper: rgba(255, 250, 235, 0.94);
+  --berkeley-ink: #12263f;
+}
+
 body {
   background: linear-gradient(180deg, #003262 0%, #1f5a96 38%, #fdb515 100%) !important;
   background-attachment: fixed;
+  color: var(--berkeley-ink);
 }
 
 .masthead,
 .initial-content,
 .page__footer {
-  background-color: rgba(255, 248, 225, 0.92) !important;
+  background-color: var(--berkeley-paper) !important;
+}
+
+.masthead {
+  border-bottom: 4px solid var(--berkeley-gold) !important;
+  box-shadow: 0 10px 30px rgba(0, 50, 98, 0.12);
+}
+
+.greedy-nav,
+.page__footer footer {
+  background: transparent !important;
+}
+
+.site-title,
+.greedy-nav a,
+.page__footer,
+.page__footer a {
+  color: var(--berkeley-blue-deep) !important;
+}
+
+a {
+  color: var(--berkeley-blue-soft);
+  text-decoration-color: rgba(253, 181, 21, 0.8);
+}
+
+a:hover,
+a:focus {
+  color: var(--berkeley-blue);
+  text-decoration-color: var(--berkeley-gold);
+}
+
+.btn,
+button,
+input[type="submit"],
+input[type="button"] {
+  background: var(--berkeley-blue) !important;
+  border: 1px solid var(--berkeley-blue) !important;
+  color: #fff !important;
+}
+
+.btn:hover,
+.btn:focus,
+button:hover,
+button:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+input[type="button"]:hover,
+input[type="button"]:focus {
+  background: var(--berkeley-gold) !important;
+  border-color: var(--berkeley-gold) !important;
+  color: var(--berkeley-blue-deep) !important;
+}
+
+.page,
+.archive,
+.sidebar,
+.author__content,
+.archive__item,
+.page__content,
+.notice {
+  background: var(--berkeley-paper);
+  border-radius: 16px;
+  box-shadow: 0 16px 40px rgba(0, 31, 63, 0.08);
+}
+
+.archive__item,
+.page__content,
+.sidebar {
+  border: 1px solid rgba(0, 50, 98, 0.08);
+}
+
+.author__avatar img,
+.page__hero-image,
+.archive__item-teaser img {
+  border: 4px solid rgba(253, 181, 21, 0.75);
+  box-shadow: 0 12px 24px rgba(0, 31, 63, 0.16);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--berkeley-blue-deep);
+}
+
+blockquote {
+  border-left: 4px solid var(--berkeley-gold);
+  background: rgba(255, 224, 138, 0.18);
+}
+
+table th {
+  background: rgba(0, 50, 98, 0.1);
+  color: var(--berkeley-blue-deep);
+}
+
+.page__footer {
+  border-top: 4px solid var(--berkeley-gold);
 }
