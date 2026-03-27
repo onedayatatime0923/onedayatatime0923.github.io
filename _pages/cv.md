@@ -79,10 +79,6 @@ Taipei, Taiwan | September 2018 - February 2020
 * Implemented an initial detailed-routing engine with concurrent track assignment and multithreaded routing; handled designs with up to 1M nets using less than 64 GB of memory in 10 hours on most benchmarks.
 * Built a routability-driven hybrid global router and a system-level FPGA router with TDM optimization; contributed to 2nd place at ACM ISPD 2019, Top 5 / Honorable Mention at ICCAD 2019, and an ICCAD 2021 publication.
 
-<ul>{% for post in site.publications reversed %}
-  {% include archive-single-cv.html %}
-{% endfor %}</ul>
-
 ## Selected Awards
 
 * **Outstanding Performance Scholarship**, National Taiwan University | November 2019
