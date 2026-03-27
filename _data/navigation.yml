@@ -9,4 +9,5 @@ main:
     url: /publications/
     
   - title: "CV"
-    url: /cv/
+    url: /files/cv/resume.pdf
+    download: resume.pdf
