@@ -471,3 +471,13 @@ a {
     border-radius: 24px;
   }
 }
+body {
+  background: linear-gradient(180deg, #003262 0%, #1f5a96 38%, #fdb515 100%);
+  background-attachment: fixed;
+}
+
+.masthead,
+.initial-content,
+.page__footer {
+  background-color: rgba(255, 248, 225, 0.9);
+}
