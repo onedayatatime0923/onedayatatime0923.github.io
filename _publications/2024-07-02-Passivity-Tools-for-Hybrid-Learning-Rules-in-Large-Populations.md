@@ -5,7 +5,6 @@ permalink: /publication/passivity-hybrid-learning
 date: 2026-01-01
 publication_year: 2026
 venue: "Automatica"
-citation: "Jair Certorio, Kevin Chang, Nuno C. Martins, Pierluigi Nuzzo, and Yasser Shoukry, \"Passivity Tools for Hybrid Learning Rules in Large Populations,\" Automatica, 2026."
 ---
 
 This paper develops passivity-based analytical tools for reasoning about hybrid learning rules in large populations, where dynamics may combine continuous adaptation with discrete update mechanisms. The work focuses on scalable stability analysis for collective learning behavior in systems that are too large or too heterogeneous for naive equilibrium analysis.

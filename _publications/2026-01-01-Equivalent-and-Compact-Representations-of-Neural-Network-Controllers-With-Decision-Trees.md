@@ -5,8 +5,6 @@ permalink: /publication/equivalent-compact-dt-controllers
 date: 2025-07-18
 publication_year: 2026
 venue: "IEEE Transactions on Automatic Control"
-paperurl: "https://arxiv.org/abs/2304.06049"
-citation: "Kevin Chang, Nathan Dahlin, Rahul Jain, and Pierluigi Nuzzo, \"Equivalent and Compact Representations of Neural Network Controllers With Decision Trees,\" IEEE Transactions on Automatic Control, pp. 1--14, 2026."
 ---
 
 This journal paper develops equivalent and compact decision-tree representations for neural network controllers, extending the line of work on exact neural-controller transformation with a stronger emphasis on representation quality and deployability. The central contribution is to preserve controller behavior exactly while also reducing representational overhead enough to make downstream verification and implementation more practical.

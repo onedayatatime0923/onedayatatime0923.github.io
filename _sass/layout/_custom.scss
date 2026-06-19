@@ -310,7 +310,6 @@ a {
 .home-hero__actions,
 .contact-links,
 .home-pill-row,
-.archive__item-actions,
 .page__footer-copyright {
   display: flex;
   flex-wrap: wrap;
@@ -345,8 +344,7 @@ a {
 }
 
 .home-pill-row span,
-.contact-links a,
-.archive__item-actions a {
+.contact-links a {
   background: rgba(187, 90, 60, 0.08);
   border: 1px solid rgba(187, 90, 60, 0.14);
   border-radius: 999px;
@@ -387,14 +385,9 @@ a {
   font-size: 1.35rem;
 }
 
-.archive__item-meta,
-.archive__item-citation {
+.archive__item-meta {
   color: #64564b;
   font-size: 0.95rem;
-}
-
-.archive__item-citation {
-  margin-bottom: 0.85rem;
 }
 
 .page__footer {
