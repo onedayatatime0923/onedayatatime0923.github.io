@@ -41,10 +41,10 @@ redirect_from:
     <p class="home-card__eyebrow">Selected Work</p>
     <h3>Start with these publications</h3>
     <div class="home-pill-row">
-      <a href="/publication/equivalent-compact-dt-controllers">Decision-tree controller representations</a>
-      <a href="/publication/passivity-hybrid-learning">Hybrid learning rules and passivity</a>
-      <a href="/publication/nn-to-dt">Exact neural controller transformation</a>
-      <a href="/publication/deep-rl-distillation">Deep RL controller distillation</a>
+      <a href="{{ '/publication/equivalent-compact-dt-controllers' | relative_url }}">Decision-tree controller representations</a>
+      <a href="{{ '/publication/passivity-hybrid-learning' | relative_url }}">Hybrid learning rules and passivity</a>
+      <a href="{{ '/publication/nn-to-dt' | relative_url }}">Exact neural controller transformation</a>
+      <a href="{{ '/publication/deep-rl-distillation' | relative_url }}">Deep RL controller distillation</a>
     </div>
   </article>
 </section>
