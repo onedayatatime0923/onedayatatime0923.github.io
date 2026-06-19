@@ -2,7 +2,8 @@
 title: "Passivity Tools for Hybrid Learning Rules in Large Populations"
 collection: publications
 permalink: /publication/passivity-hybrid-learning
-date: 2026-01-01
+date: 2024-07-02
+publication_year: 2026
 venue: "Automatica"
 paperurl: "https://arxiv.org/abs/2407.02083"
 citation: "Jair Certorio, Kevin Chang, Nuno C. Martins, Pierluigi Nuzzo, and Yasser Shoukry, \"Passivity Tools for Hybrid Learning Rules in Large Populations,\" Automatica, 2026."
