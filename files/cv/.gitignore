@@ -21,6 +21,7 @@
 *.mtc1
 *.out
 *.toc
+*.xdv
 *.fdb_latexmk
 *.synctex.gz
 .*

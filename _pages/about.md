@@ -10,7 +10,7 @@ redirect_from:
 <section class="home-hero">
   <p class="home-hero__eyebrow">Trustworthy Autonomous Systems</p>
   <h2 class="home-hero__title">I build verification and control methods for learning-enabled cyber-physical systems.</h2>
-  <p class="home-hero__lead">I am a Ph.D. student in the Department of Electrical Engineering and Computer Sciences at the University of California, Berkeley, advised by Prof. Pierluigi Nuzzo. My work sits at the intersection of formal methods, optimization, and machine learning for safety-critical autonomy.</p>
+  <p class="home-hero__lead">I am a Ph.D. candidate in the Department of Electrical Engineering and Computer Sciences at the University of California, Berkeley, advised by Prof. Pierluigi Nuzzo. My work sits at the intersection of formal methods, optimization, and machine learning for safety-critical autonomy.</p>
   <div class="home-hero__actions">
     <a class="btn btn--primary" href="/publications/">View Publications</a>
     <a class="btn btn--primary" href="/files/cv/resume.pdf" download="resume.pdf">Download CV</a>

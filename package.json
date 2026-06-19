@@ -1,25 +1,22 @@
 {
-  "name": "academic-pages",
-  "version": "0.8.1.1",
-  "description": "Academic Pages Mistakes Jekyll theme npm build scripts",
+  "name": "kevin-chang-personal-site",
+  "version": "1.0.0",
+  "description": "Personal academic website for Kevin Chiaming Chang.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/academicpages/academicpages.github.io"
+    "url": "https://github.com/onedayatatime0923/onedayatatime0923.github.io"
   },
   "keywords": [
     "jekyll",
     "theme",
     "minimal"
   ],
-  "contributors": [
-    "Michael Rose",
-    "Robert Zupko"
-  ],
+  "author": "Kevin Chiaming Chang",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/academicpages/academicpages.github.io/issues"
+    "url": "https://github.com/onedayatatime0923/onedayatatime0923.github.io/issues"
   },
-  "homepage": "https://github.com/academicpages/academicpages.github.io",
+  "homepage": "https://onedayatatime0923.github.io",
   "engines": {
     "node": ">= 0.10.0"
   },

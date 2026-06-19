@@ -1,1 +1,18 @@
 tags
+
+# Jekyll and dependency output
+_site/
+.sass-cache/
+.jekyll-cache/
+.bundle/
+vendor/bundle/
+node_modules/
+
+# LaTeX build output
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.xdv

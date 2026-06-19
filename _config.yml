@@ -26,7 +26,7 @@ author:
   avatar           : "profile.jpg"
   name             : "Kevin Chiaming Chang"
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D. Student in EECS"
+  bio              : "Ph.D. Candidate in EECS"
   location         : "Berkeley, CA"
   employer         : "University of California, Berkeley"
   uri              : # URL
@@ -119,7 +119,7 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  provider               : false # false (default), "google", "google-universal", "google-analytics-4", "custom"
   google:
     tracking_id          :
 
@@ -152,6 +152,13 @@ exclude:
   - log
   - node_modules
   - package.json*
+  - "files/**/*.aux"
+  - "files/**/*.fdb_latexmk"
+  - "files/**/*.fls"
+  - "files/**/*.log"
+  - "files/**/*.out"
+  - "files/**/*.synctex.gz"
+  - "files/**/*.xdv"
   - Rakefile
   - README
   - tmp
