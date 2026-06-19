@@ -11,13 +11,6 @@ redirect_from:
   <h2 class="home-hero__title">Kevin Chang</h2>
   <p class="home-hero__kicker">Trustworthy autonomy, designed with formal guarantees.</p>
   <p class="home-hero__lead">I am a Ph.D. candidate in the Department of Electrical Engineering and Computer Sciences at the University of California, Berkeley, advised by Prof. Pierluigi Nuzzo. My work connects formal methods, optimization, and machine learning so autonomous systems can be designed and analyzed with stronger guarantees.</p>
-  <div class="home-command" aria-label="Primary navigation">
-    <span class="home-command__text">Explore publications, research themes, and collaboration.</span>
-    <div class="home-command__actions">
-      <a class="btn btn--primary" href="/publications/">Publications</a>
-      <a class="btn btn--secondary" href="/files/cv/resume.pdf" download="resume.pdf">CV</a>
-    </div>
-  </div>
   <nav class="home-tabs" aria-label="Homepage sections">
     <a href="#research">Research</a>
     <a href="#selected-work">Selected Work</a>

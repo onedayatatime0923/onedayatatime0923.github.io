@@ -133,22 +133,6 @@ a {
   gap: 0.65rem;
 }
 
-.site-brand__mark {
-  align-items: center;
-  background: var(--berkeley-blue);
-  border: 1px solid var(--accent-line);
-  border-radius: 0.75rem;
-  color: #fdb515;
-  display: inline-flex;
-  flex: 0 0 auto;
-  font-family: $fraunces;
-  font-size: 0.82rem;
-  font-weight: 700;
-  height: 2.3rem;
-  justify-content: center;
-  width: 2.3rem;
-}
-
 .site-brand__text {
   display: inline-flex;
   flex-direction: column;
@@ -291,8 +275,10 @@ a {
     position: sticky;
     top: 5.5rem;
     height: auto;
+    max-width: none;
     overflow-y: visible;
     padding-top: 0;
+    width: 18rem;
   }
 
   @include breakpoint($large) {
@@ -301,6 +287,13 @@ a {
 
   @include breakpoint($x-large) {
     margin-left: 0;
+  }
+}
+
+@media screen and (min-width: $sidebar-screen-min-width) {
+  .page,
+  .archive {
+    width: calc(100% - 20rem);
   }
 }
 
@@ -352,6 +345,7 @@ a {
 .author__meta li,
 .author__urls li {
   margin-bottom: 0.6rem;
+  white-space: normal;
 }
 
 .author__meta li {
@@ -386,11 +380,13 @@ a {
   align-items: center;
   background: var(--accent-soft);
   border-radius: 0.9rem;
+  box-sizing: border-box;
   color: var(--accent-strong);
   display: inline-flex;
   font-size: 0.92rem;
   font-weight: 600;
   gap: 0.35rem;
+  max-width: 100%;
   padding: 0.55rem 0.8rem;
   text-decoration: none;
 }
@@ -473,32 +469,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-}
-
-.home-command {
-  align-items: center;
-  background: var(--surface-strong);
-  border: 1px solid var(--line);
-  border-radius: 1.85rem;
-  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.38);
-  display: flex;
-  gap: 1rem;
-  justify-content: space-between;
-  margin: 2.35rem auto 0;
-  max-width: 52rem;
-  padding: 0.8rem 0.85rem 0.8rem 1.15rem;
-  text-align: left;
-}
-
-.home-command__text {
-  color: var(--muted);
-  line-height: 1.45;
-}
-
-.home-command__actions {
-  display: inline-flex;
-  flex: 0 0 auto;
-  gap: 0.55rem;
 }
 
 .home-tabs {
