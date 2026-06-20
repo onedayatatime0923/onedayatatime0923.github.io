@@ -415,9 +415,10 @@ a:focus {
 .author__urls a {
   align-items: center;
   background: var(--accent-soft);
+  border: 1px solid transparent;
   border-radius: 0.9rem;
   box-sizing: border-box;
-  color: var(--accent-strong);
+  color: var(--accent-strong) !important;
   display: flex;
   font-size: 0.92rem;
   font-weight: 600;
@@ -425,12 +426,19 @@ a:focus {
   justify-content: center;
   max-width: 100%;
   padding: 0.55rem 0.8rem;
-  text-decoration: none;
+  text-decoration: none !important;
+  transition: background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease, transform 0.18s ease;
 }
 
 .author__meta a:hover,
-.author__urls a:hover {
-  background: var(--accent-soft);
+.author__meta a:focus,
+.author__urls a:hover,
+.author__urls a:focus {
+  background: var(--berkeley-gold-soft);
+  border-color: var(--berkeley-gold-line);
+  color: var(--ink) !important;
+  text-decoration: none !important;
+  transform: translateY(-1px);
 }
 
 .author-card .social-icons i {
