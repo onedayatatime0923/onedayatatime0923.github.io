@@ -7,6 +7,9 @@ redirect_from:
 ---
 
 <section class="home-hero">
+  <div class="home-hero__visual" aria-hidden="true">
+    <img src="{{ '/images/research-hero.png' | relative_url }}" alt="">
+  </div>
   <p class="home-hero__eyebrow">Berkeley EECS</p>
   <h2 class="home-hero__title">Kevin Chang</h2>
   <p class="home-hero__kicker">Trustworthy autonomy, designed with formal guarantees.</p>
@@ -20,10 +23,10 @@ redirect_from:
 
 <section class="home-proof" aria-label="Research snapshot">
   <p>Research areas</p>
-  <span>Formal Methods</span>
-  <span>Optimization</span>
-  <span>Learning-Enabled Control</span>
-  <span>Cyber-Physical Systems</span>
+  <span><i aria-hidden="true"></i>Formal Methods</span>
+  <span><i aria-hidden="true"></i>Optimization</span>
+  <span><i aria-hidden="true"></i>Learning-Enabled Control</span>
+  <span><i aria-hidden="true"></i>Cyber-Physical Systems</span>
 </section>
 
 <section class="home-grid" id="research" aria-label="Research overview">
@@ -47,25 +50,6 @@ redirect_from:
       <a href="{{ '/publication/deep-rl-distillation' | relative_url }}">Deep RL controller distillation</a>
     </div>
   </article>
-</section>
-
-<section class="home-section" aria-label="Research workflow">
-  <p class="home-card__eyebrow">Research Workflow</p>
-  <h2>From specifications to verified autonomy</h2>
-  <div class="home-feature-list">
-    <article>
-      <h3>Model the system</h3>
-      <p>Use contracts, hybrid-system structure, and compositional abstractions to expose the design assumptions that matter.</p>
-    </article>
-    <article>
-      <h3>Analyze the controller</h3>
-      <p>Connect optimization, verification, and learning-based representations to reason about neural and decision-tree controllers.</p>
-    </article>
-    <article>
-      <h3>Scale the guarantees</h3>
-      <p>Build methods that remain useful for distributed, decentralized, and safety-critical cyber-physical systems.</p>
-    </article>
-  </div>
 </section>
 
 <section class="home-card home-card--wide home-contact" id="contact">
