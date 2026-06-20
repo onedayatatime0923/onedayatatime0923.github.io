@@ -49,9 +49,9 @@ redirect_from:
   <h3>Continue the conversation</h3>
   <p>I am interested in conversations around verification, safe autonomy, and compositional design methodologies.</p>
   <div class="contact-links">
-    <a href="mailto:{{ site.author.email }}">Email</a>
-    <a href="https://scholar.google.com/citations?user=mJg5s2oAAAAJ&hl=en">Google Scholar</a>
-    <a href="https://github.com/onedayatatime0923">GitHub</a>
-    <a href="https://www.linkedin.com/in/kevincmchang/">LinkedIn</a>
+    <a href="mailto:{{ site.author.email }}"><i class="fa-solid fa-envelope" aria-hidden="true"></i>Email</a>
+    <a href="https://scholar.google.com/citations?user=mJg5s2oAAAAJ&hl=en"><i class="ai ai-google-scholar" aria-hidden="true"></i>Google Scholar</a>
+    <a href="https://github.com/onedayatatime0923"><i class="fab fa-github" aria-hidden="true"></i>GitHub</a>
+    <a href="https://www.linkedin.com/in/kevincmchang/"><i class="fab fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
   </div>
 </section>
