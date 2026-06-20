@@ -21,14 +21,6 @@ redirect_from:
   </nav>
 </section>
 
-<section class="home-proof" aria-label="Research snapshot">
-  <p>Research areas</p>
-  <span><i aria-hidden="true"></i>Formal Methods</span>
-  <span><i aria-hidden="true"></i>Optimization</span>
-  <span><i aria-hidden="true"></i>Learning-Enabled Control</span>
-  <span><i aria-hidden="true"></i>Cyber-Physical Systems</span>
-</section>
-
 <section class="home-grid" id="research" aria-label="Research overview">
   <article class="home-card">
     <p class="home-card__eyebrow">Research</p>
@@ -52,7 +44,7 @@ redirect_from:
   </article>
 </section>
 
-<section class="home-card home-card--wide home-contact" id="contact">
+<section class="home-contact" id="contact">
   <p class="home-card__eyebrow">Contact</p>
   <h3>Continue the conversation</h3>
   <p>I am interested in conversations around verification, safe autonomy, and compositional design methodologies.</p>

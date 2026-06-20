@@ -324,11 +324,12 @@ a:focus {
 }
 
 .author-card {
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 1.15rem;
-  box-shadow: var(--shadow-soft);
-  padding: 1.2rem;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0.35rem 0.2rem;
+  text-align: center;
 }
 
 .author__avatar {
@@ -346,7 +347,7 @@ a:focus {
   margin-right: auto;
   max-width: 220px;
   object-fit: cover;
-  object-position: center 36%;
+  object-position: center 24%;
   width: 220px;
 }
 
@@ -392,6 +393,7 @@ a:focus {
   align-items: center;
   display: flex;
   gap: 0.5rem;
+  justify-content: center;
 }
 
 .author__meta-item i {
@@ -416,10 +418,11 @@ a:focus {
   border-radius: 0.9rem;
   box-sizing: border-box;
   color: var(--accent-strong);
-  display: inline-flex;
+  display: flex;
   font-size: 0.92rem;
   font-weight: 600;
   gap: 0.35rem;
+  justify-content: center;
   max-width: 100%;
   padding: 0.55rem 0.8rem;
   text-decoration: none;
@@ -458,8 +461,8 @@ a:focus {
   isolation: isolate;
   margin: 0 auto 2.4rem;
   max-width: 62rem;
-  min-height: 82vh;
-  padding: 7rem 0 2.6rem;
+  min-height: 68vh;
+  padding: 5.4rem 0 2.2rem;
   position: relative;
   text-align: center;
 }
@@ -486,7 +489,8 @@ a:focus {
   filter: saturate(1.08);
   height: 38rem;
   object-fit: cover;
-  opacity: 0.48;
+  object-position: center 55%;
+  opacity: 0.36;
   width: 100%;
 }
 
@@ -559,55 +563,6 @@ a:focus {
   color: var(--ink);
 }
 
-.home-proof {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.7rem;
-  justify-content: center;
-  margin: 0 auto 4.5rem;
-  max-width: 64rem;
-}
-
-.home-proof p {
-  align-items: center;
-  color: var(--berkeley-gold);
-  display: flex;
-  font-size: 0.82rem;
-  font-weight: 750;
-  justify-content: center;
-  margin: 0;
-  min-height: 2.75rem;
-  padding: 0.55rem 0.8rem;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.home-proof span {
-  align-items: center;
-  background: rgba(247, 242, 232, 0.055);
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  color: var(--ink);
-  display: inline-flex;
-  font-size: 0.88rem;
-  font-weight: 800;
-  gap: 0.5rem;
-  justify-content: center;
-  min-height: 2.75rem;
-  padding: 0.6rem 0.9rem;
-  text-align: center;
-}
-
-.home-proof span i {
-  background: var(--berkeley-gold);
-  border-radius: 999px;
-  box-shadow: 0 0 18px var(--berkeley-gold-soft);
-  display: inline-flex;
-  height: 0.48rem;
-  width: 0.48rem;
-}
-
 .home-grid {
   display: grid;
   gap: 1.6rem;
@@ -617,15 +572,25 @@ a:focus {
 }
 
 .home-card {
-  background: var(--surface);
-  border: 1px solid var(--line);
+  background: rgba(28, 27, 24, 0.58);
+  border: 1px solid rgba(247, 242, 232, 0.1);
   border-radius: 1.1rem;
+  overflow: hidden;
   padding: 1.8rem;
+  position: relative;
+}
+
+.home-card::before {
+  background: linear-gradient(90deg, var(--berkeley-gold-line), transparent);
+  content: "";
+  height: 1px;
+  inset: 0 0 auto;
+  position: absolute;
 }
 
 .home-card--accent {
   background:
-    linear-gradient(180deg, var(--surface-strong) 0%, var(--surface-accent) 100%),
+    linear-gradient(180deg, rgba(38, 36, 31, 0.72) 0%, rgba(0, 50, 98, 0.24) 100%),
     linear-gradient(135deg, transparent 0%, var(--berkeley-gold-soft) 100%);
   border-color: var(--berkeley-gold-line);
 }
@@ -636,7 +601,23 @@ a:focus {
 }
 
 .home-contact {
-  margin-bottom: 8rem;
+  border-top: 1px solid var(--line);
+  margin: 3.8rem auto 8rem;
+  max-width: 58rem;
+  padding-top: 2.2rem;
+  text-align: center;
+}
+
+.home-contact h3 {
+  color: var(--ink);
+  font-family: $fraunces;
+  margin-top: 0;
+}
+
+.home-contact p {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40rem;
 }
 
 .home-list {
@@ -647,21 +628,39 @@ a:focus {
 .home-pill-row span,
 .home-pill-row a,
 .contact-links a {
+  align-items: center;
   background: var(--nav-hover);
   border: 1px solid var(--line);
   border-radius: 1rem;
-  color: var(--accent-strong);
+  color: var(--accent-strong) !important;
+  display: inline-flex;
   font-size: 0.9rem;
   font-weight: 700;
   padding: 0.55rem 0.9rem;
   text-decoration: none;
+  transition: background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease, transform 0.18s ease;
+}
+
+.home-pill-row a::before,
+.contact-links a::before {
+  background: var(--berkeley-gold);
+  border-radius: 999px;
+  content: "";
+  display: inline-flex;
+  flex: 0 0 auto;
+  height: 0.42rem;
+  margin-right: 0.5rem;
+  width: 0.42rem;
 }
 
 .home-pill-row a:hover,
-.contact-links a:hover {
+.home-pill-row a:focus,
+.contact-links a:hover,
+.contact-links a:focus {
   background: var(--berkeley-gold-soft);
   border-color: var(--berkeley-gold-line);
-  color: var(--ink);
+  color: var(--ink) !important;
+  transform: translateY(-1px);
 }
 
 .archive-intro {
@@ -676,8 +675,8 @@ a:focus {
 }
 
 .archive__item {
-  background: var(--surface);
-  border: 1px solid var(--line);
+  background: rgba(28, 27, 24, 0.58);
+  border: 1px solid rgba(247, 242, 232, 0.1);
   border-radius: 1rem;
   margin-bottom: 1.1rem;
   padding: 1.35rem 1.4rem;
@@ -689,14 +688,35 @@ a:focus {
   transform: translateY(-1px);
 }
 
+.archive__item-heading {
+  align-items: start;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
 .archive__item-title {
   font-family: $fraunces;
   font-size: 1.35rem;
+  margin-top: 0;
+}
+
+.archive__item-year {
+  background: var(--berkeley-gold-soft);
+  border: 1px solid var(--berkeley-gold-line);
+  border-radius: 999px;
+  color: var(--berkeley-gold);
+  flex: 0 0 auto;
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1;
+  padding: 0.42rem 0.58rem;
 }
 
 .archive__item-meta {
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  opacity: 0.88;
 }
 
 .page__footer {
@@ -772,7 +792,7 @@ a:focus {
   .home-hero {
     min-height: auto;
     padding-bottom: 2rem;
-    padding-top: 3rem;
+    padding-top: 2.6rem;
   }
 
   .home-hero__visual {
@@ -799,12 +819,16 @@ a:focus {
     font-size: 1.45rem;
   }
 
-  .home-proof p {
-    flex-basis: 100%;
-    min-height: 3rem;
-  }
-
   .home-contact {
     margin-bottom: 6rem;
+  }
+
+  .archive__item-heading {
+    display: block;
+  }
+
+  .archive__item-year {
+    display: inline-flex;
+    margin-bottom: 0.7rem;
   }
 }
