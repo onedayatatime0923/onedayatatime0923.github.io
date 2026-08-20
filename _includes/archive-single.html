@@ -19,7 +19,7 @@
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+  <article class="archive__item" itemscope itemtype="https://schema.org/{% if post.collection == 'publications' %}ScholarlyArticle{% else %}CreativeWork{% endif %}">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src=
@@ -35,11 +35,7 @@
     <div class="archive__item-heading">
       <div>
         {% if post.collection == 'publications' %}
-          {% if post.venue contains 'Transactions' or post.venue contains 'Automatica' %}
-            <span class="archive__item-type">Journal</span>
-          {% else %}
-            <span class="archive__item-type">Conference</span>
-          {% endif %}
+          <span class="archive__item-type">{{ post.publication_type | default: "Publication" }}</span>
         {% endif %}
         <h2 class="archive__item-title" itemprop="headline">
           {% if post.link %}
@@ -61,14 +57,23 @@
     {% if post.collection == 'teaching' %}
       <p class="archive__item-meta">{{ post.type }}, <i>{{ post.venue }}</i>, {{ display_year }}</p>
     {% elsif post.collection == 'publications' %}
-      <p class="archive__item-meta">Published in <i>{{ post.venue }}</i>, {{ display_year }}</p>
+      {% if post.authors %}<p class="archive__item-authors">{{ post.authors }}</p>{% endif %}
+      <p class="archive__item-meta"><i>{{ post.venue }}</i> · {{ display_year }}</p>
+      {% if post.summary %}<p class="archive__item-summary">{{ post.summary }}</p>{% endif %}
+      {% if post.paperurl %}
+        <div class="archive__item-links" aria-label="Links for {{ title | strip_html }}">
+          <a href="{{ base_path }}{{ post.url }}">Overview</a>
+          <a href="{{ post.paperurl }}">Paper</a>
+          {% if post.doi %}<a href="https://doi.org/{{ post.doi }}">DOI</a>{% endif %}
+        </div>
+      {% endif %}
     {% elsif post.date %}
       <p class="archive__item-meta"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
     {% endif %}
 
-    {% if post.excerpt and site.read_more != 'enabled' %}
+    {% if post.collection != 'publications' and post.excerpt and site.read_more != 'enabled' %}
     <div class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</div>
-    {% elsif post.excerpt and site.read_more == 'enabled' %}
+    {% elsif post.collection != 'publications' and post.excerpt and site.read_more == 'enabled' %}
     <div class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></div>
     {% endif %}
     

@@ -1,24 +1,24 @@
-# Kevin Chiaming Chang Website
+# Kevin Chiaming Chang — Research Portfolio
 
-Personal academic website for Kevin Chiaming Chang, built with Jekyll and hosted on GitHub Pages.
+Personal research portfolio for Kevin Chiaming Chang, built with Jekyll and hosted on GitHub Pages.
 
 Live site: <https://onedayatatime0923.github.io>
 
 ## Overview
 
-This repository contains a research portfolio site focused on:
+The site presents:
 
-- publications
-- research summary and biography
-- downloadable CV
-- contact and profile links
+- a concise research narrative around formal verification and learning-enabled control
+- selected journal and conference publications with direct paper and DOI links
+- a downloadable, source-controlled LaTeX CV
+- academic, professional, and contact profiles
 
-The site is based on Academic Pages / Minimal Mistakes, but has been customized for a simpler personal academic profile.
+It is based on Academic Pages / Minimal Mistakes with a custom Berkeley-inspired visual system.
 
 ## Repository Structure
 
-- `_pages/`: top-level pages such as the homepage, publications page, and sitemap
-- `_publications/`: publication entries rendered into the publications section
+- `_pages/`: homepage, publications index, 404 page, and sitemap
+- `_publications/`: structured publication entries and individual paper overviews
 - `_data/`: structured site data, including the masthead navigation
 - `_includes/` and `_layouts/`: shared Jekyll templates
 - `_sass/` and `assets/`: stylesheets, JavaScript, fonts, and images
@@ -60,21 +60,28 @@ Note: changes to `_config.yml` require restarting the Jekyll server.
 
 ### Update navigation
 
-Edit [`_data/navigation.yml`](/home/kevin/Github/onedayatatime0923.github.io/_data/navigation.yml).
+Edit `_data/navigation.yml`.
 
 ### Add or edit publications
 
-Create or update markdown files in [`_publications/`](/home/kevin/Github/onedayatatime0923.github.io/_publications).
+Create or update Markdown files in `_publications/`. Keep the structured front matter—authors, venue, publication type, summary, paper URL, and DOI—aligned with the paper's canonical record.
 
 ### Replace the downloadable CV
 
-Update the PDF at [`files/cv/resume.pdf`](/home/kevin/Github/onedayatatime0923.github.io/files/cv/resume.pdf).
+Update `files/cv/resume.pdf`.
 
 The site header CV tab is configured to download this file directly.
 
 ### Edit the CV source
 
-The LaTeX source for the CV lives in [`files/cv/resume.tex`](/home/kevin/Github/onedayatatime0923.github.io/files/cv/resume.tex) and the supporting section files under [`files/cv/resume/`](/home/kevin/Github/onedayatatime0923.github.io/files/cv/resume).
+The LaTeX source lives in `files/cv/resume.tex`, with section files under `files/cv/resume/`.
+
+Build it with:
+
+```bash
+cd files/cv
+latexmk -xelatex resume.tex
+```
 
 ## JavaScript Build
 
@@ -92,7 +99,7 @@ npm run watch:js
 
 ## Deployment
 
-This repository is intended for GitHub Pages deployment from the default branch.
+This repository is deployed to GitHub Pages from the default branch.
 
 Push changes to GitHub, then verify the published site at:
 

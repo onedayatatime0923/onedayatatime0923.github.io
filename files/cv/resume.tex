@@ -21,7 +21,7 @@
 \documentclass[11pt, letterpaper]{awesome-cv}
 
 % Configure page margins with geometry
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\geometry{left=1.25cm, top=.55cm, right=1.25cm, bottom=1.4cm, footskip=.5cm}
 
 % Specify the location of the included fonts
 \fontdir[fonts/]
@@ -50,6 +50,23 @@
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
+% Compact résumé typography and spacing
+\renewcommand{\acvHeaderAfterSocialSkip}{3.5mm}
+\renewcommand{\acvSectionTopSkip}{1.5mm}
+\renewcommand{\acvSectionContentTopSkip}{3.5mm}
+\renewcommand*{\headerfirstnamestyle}[1]{{\fontsize{26pt}{1em}\headerfontlight\color{graytext} #1}}
+\renewcommand*{\headerlastnamestyle}[1]{{\fontsize{26pt}{1em}\headerfont\bfseries\color{text} #1}}
+\renewcommand*{\sectionstyle}[1]{{\fontsize{16.5pt}{1em}\sectionfont\scshape\color{awesome} #1}}
+\renewcommand*{\paragraphstyle}{\fontsize{9.5pt}{1em}\bodyfontlight\upshape\color{text}}
+\renewcommand*{\entrytitlestyle}[1]{{\fontsize{11.2pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\renewcommand*{\entrylocationstyle}[1]{{\fontsize{11.2pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
+\renewcommand*{\entrypositionstyle}[1]{{\fontsize{11.2pt}{1em}\bodyfont\upshape\color{graytext} #1}}
+\renewcommand*{\entrydatestyle}[1]{{\fontsize{9.2pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
+\renewcommand*{\descriptiontitlestyle}[1]{{\fontsize{10.5pt}{1em}\bodyfont\slshape\color{darktext} #1}}
+\renewcommand*{\descriptionhighlightstyle}[1]{{\fontsize{9.5pt}{1em}\bodyfont\upshape\color{darktext}\underline{#1}}}
+\renewcommand*{\descriptionstyle}[1]{{\fontsize{9.5pt}{1em}\bodyfont\upshape\color{darktext} #1}}
+\renewcommand*{\skilltypestyle}[1]{{\fontsize{10.5pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+
 
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
@@ -57,8 +74,8 @@
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo[rectangle,edge,right]{./examples/profile}
-\name{Kevin Chia-Ming}{Chang}
-\position{Ph.D. Candidate | Formal Methods, Verification, Machine Learning}
+\name{Kevin Chiaming}{Chang}
+\position{Ph.D. Candidate | Formal Verification, Control, Machine Learning}
 % \address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
 
 % \mobile{(+82) 10-9030-1843}
@@ -90,8 +107,8 @@
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
-  {\today}
-  {Kevin Chia-Ming Chang}
+  {Updated August 2026}
+  {Kevin Chiaming Chang}
   {\thepage}
 
 
@@ -101,20 +118,21 @@
 %-------------------------------------------------------------------------------
 {\small
 \input{resume/summary.tex}
+}
+\input{resume/education.tex}
+\input{resume/experience.tex}
+{\small
 \input{resume/strength.tex}
 }
-\input{resume/experience.tex}
-\input{resume/education.tex}
+\input{resume/engineering.tex}
+\clearpage
 \input{resume/service.tex}
 {\small
 \input{resume/project.tex}
 \input{resume/publication.tex}
 \input{resume/honors.tex}
+\input{resume/extracurricular.tex}
 }
-% \input{resume/committees.tex}
-% \input{resume/course.tex}
-% \input{resume/extracurricular.tex}
-% \input{resume/interest.tex}
 
 
 %-------------------------------------------------------------------------------

@@ -2,15 +2,27 @@
 title: "Equivalent and Compact Representations of Neural Network Controllers With Decision Trees"
 collection: publications
 permalink: /publication/equivalent-compact-dt-controllers
-date: 2025-07-18
+date: 2026-01-01
 publication_year: 2026
 venue: "IEEE Transactions on Automatic Control"
+publication_type: "Journal article"
+authors: "Kevin Chang, Nathan Dahlin, Rahul Jain, and Pierluigi Nuzzo"
+summary: "An exact, pruning-aware transformation from discrete-output neural controllers to soft decision trees that can substantially reduce verification time."
+description: "An exact transformation from discrete-output neural-network controllers to compact soft decision trees for interpretable and scalable formal verification."
+paperurl: "https://doi.org/10.1109/TAC.2026.3676368"
+doi: "10.1109/TAC.2026.3676368"
+arxiv: "https://arxiv.org/abs/2304.06049"
 ---
 
-This journal paper develops equivalent and compact decision-tree representations for neural network controllers, extending the line of work on exact neural-controller transformation with a stronger emphasis on representation quality and deployability. The central contribution is to preserve controller behavior exactly while also reducing representational overhead enough to make downstream verification and implementation more practical.
+Neural-network controllers can perform well while remaining difficult to inspect or verify. This work constructs soft decision-tree controllers that are exactly equivalent to discrete-output neural controllers, including networks with ReLU activations and argmax operations.
 
-Key contributions:
-* Derives decision-tree representations that are behaviorally equivalent to the original neural controller.
-* Emphasizes compactness so that the transformed controller is not only interpretable, but also computationally manageable.
-* Strengthens the verification and deployment story for neural controllers used in closed-loop control systems.
-* Consolidates the transformation framework in journal form for broader use in trustworthy learning-enabled control.
+## Why it matters
+
+The transformation preserves the controller's input-output behavior, so properties established on the tree apply to the original neural controller. Automatic branch pruning also makes the resulting representation more useful for solver-based analysis and implementation.
+
+## Key contributions
+
+- Establishes an exact equivalence result for discrete-output neural-network and soft decision-tree controllers.
+- Develops an automated transformation that removes redundant branches during construction.
+- Evaluates the method on MountainCar, CartPole, and CarRacing controllers.
+- Demonstrates verification-time improvements of up to 20x on the evaluated benchmarks.

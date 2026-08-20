@@ -1,15 +1,16 @@
 {
   "name": "kevin-chang-personal-site",
-  "version": "1.0.0",
-  "description": "Personal academic website for Kevin Chiaming Chang.",
+  "version": "1.1.0",
+  "description": "Research portfolio for Kevin Chiaming Chang.",
   "repository": {
     "type": "git",
     "url": "https://github.com/onedayatatime0923/onedayatatime0923.github.io"
   },
   "keywords": [
     "jekyll",
-    "theme",
-    "minimal"
+    "academic-portfolio",
+    "formal-verification",
+    "cyber-physical-systems"
   ],
   "author": "Kevin Chiaming Chang",
   "license": "MIT",
@@ -18,7 +19,7 @@
   },
   "homepage": "https://onedayatatime0923.github.io",
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">=18"
   },
   "dependencies": {
     "fitvids": "^2.1.1",

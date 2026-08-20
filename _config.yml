@@ -12,7 +12,7 @@ site_theme               : "default" # Currently available options are "default"
 title                    : "Kevin Chiaming Chang"
 title_separator          : "-"
 name                     : &name "Kevin Chiaming Chang"
-description              : &description "I am a researcher in Cyber-Physical Systems (CPS) with a focus on developing assume–guarantee contract frameworks for modular and compositional design.  My work integrates formal verification and neural network analysis to ensure safety, reliability, and explainability in learning-enabled control architectures.  I am broadly interested in bridging machine learning and formal methods to create trustworthy autonomous and distributed systems."   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Kevin Chiaming Chang is a UC Berkeley EECS Ph.D. candidate developing formal methods, verification techniques, and interpretable controllers for trustworthy learning-enabled systems."
 url                      : https://onedayatatime0923.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,7 +26,7 @@ author:
   avatar           : "profile-avatar.png"
   name             : "Kevin Chiaming Chang"
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D. Candidate in EECS"
+  bio              : "Ph.D. candidate working at the intersection of formal methods, control, and machine learning."
   location         : "Berkeley, CA"
   employer         : "University of California, Berkeley"
   uri              : # URL
@@ -107,14 +107,17 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Social media default site image
-og_description           :  # Social media default site image description
+og_image                 : "social-card.png"
+og_description           : "Formal methods and verification for trustworthy learning-enabled systems."
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Person
+  name                   : "Kevin Chiaming Chang"
+  links:
+    - "https://scholar.google.com/citations?user=mJg5s2oAAAAJ&hl=en"
+    - "https://github.com/onedayatatime0923"
+    - "https://www.linkedin.com/in/kevincmchang/"
 
 
 # Analytics
@@ -142,8 +145,16 @@ exclude:
   - assets/js/vendor
   - CHANGELOG
   - Capfile
+  - CONTRIBUTING.md
   - config
   - Dockerfile
+  - docker-compose.yaml
+  - files/cover_letter
+  - files/cv/README.md
+  - files/cv/awesome-cv.cls
+  - files/cv/fonts
+  - "files/cv/resume/**"
+  - files/cv/resume.tex
   - Gemfile
   - Gruntfile.js
   - gulpfile.js
@@ -162,6 +173,7 @@ exclude:
   - Rakefile
   - README
   - tmp
+  - tags
   - vendor
 keep_files:
   - .git
@@ -233,7 +245,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: Etc/UTC # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Los_Angeles
 
 
 # Plugins

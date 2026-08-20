@@ -4,30 +4,30 @@
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
 {% endif %}
 
-<div itemscope itemtype="http://schema.org/Person">
+<div itemscope itemtype="https://schema.org/Person">
   <div class="author-card">
     <div class="author__avatar">
       {% if author.avatar contains "://" %}
-        <img src="{{ author.avatar }}" alt="{{ author.name }}" fetchpriority="high" />
+        <img src="{{ author.avatar }}" alt="Portrait of {{ author.name }}" fetchpriority="high" itemprop="image" />
       {% else %}
-        <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}" fetchpriority="high" />
+        <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" alt="Portrait of {{ author.name }}" fetchpriority="high" itemprop="image" />
       {% endif %}
     </div>
 
     <div class="author__content">
       <p class="author__eyebrow">Berkeley EECS</p>
-      <h3 class="author__name">{{ author.name }}</h3>
+      <h2 class="author__name" itemprop="name">{{ author.name }}</h2>
       {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
-      {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
+      {% if author.bio %}<p class="author__bio" itemprop="description">{{ author.bio }}</p>{% endif %}
       <ul class="author__meta">
         {% if author.location %}
-          <li class="author__meta-item"><i class="fa-solid fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}</li>
+          <li class="author__meta-item" itemprop="homeLocation"><i class="fa-solid fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}</li>
         {% endif %}
         {% if author.employer %}
-          <li class="author__meta-item"><i class="fa-solid fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer }}</li>
+          <li class="author__meta-item" itemprop="affiliation"><i class="fa-solid fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer }}</li>
         {% endif %}
         {% if author.email %}
-          <li><a href="mailto:{{ author.email }}"><i class="fa-solid fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
+          <li><a href="mailto:{{ author.email }}" itemprop="email"><i class="fa-solid fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
         {% endif %}
       </ul>
     </div>

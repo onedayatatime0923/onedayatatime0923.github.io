@@ -5,8 +5,11 @@ This directory contains the LaTeX source and generated PDF for the downloadable 
 ## Build
 
 ```bash
+cd files/cv
 latexmk -xelatex resume.tex
 ```
+
+The command updates `resume.pdf`, which is the file linked from the website.
 
 ## Files
 

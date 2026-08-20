@@ -1,13 +1,14 @@
 ---
 layout: archive
 title: "Sitemap"
+description: "A concise index of pages on Kevin Chiaming Chang's research portfolio."
 permalink: /sitemap/
 author_profile: true
 ---
 
 {% include base_path %}
 
-A list of the main pages on the site.
+An index of the main pages on this site.
 
 {% assign visible_pages = site.pages | where_exp: "item", "item.sitemap != false" %}
 {% if visible_pages.size > 0 %}
