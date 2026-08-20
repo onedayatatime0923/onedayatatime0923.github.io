@@ -724,7 +724,7 @@
     \renewcommand{\labelitemi}{}
     \setlength\leftmarginii{4ex}
     \renewcommand{\labelitemii}{$\circ$}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} R{#1} L{\textwidth - #1}}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{#1} L{\dimexpr\textwidth - #1 - 3\tabcolsep\relax}}
 }{%
     \end{tabular*}
   \vspace{-4.0mm}
