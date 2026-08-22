@@ -512,6 +512,29 @@ a:focus {
   display: none;
 }
 
+.author__profile-links .author__profile-link-item {
+  margin-bottom: 0.6rem;
+}
+
+.author__profile-links .author__profile-link {
+  min-height: 2.5rem;
+}
+
+.author__profile-links .author__profile-link-icon {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 1.2rem;
+  font-size: 1rem;
+  height: 1.2rem;
+  justify-content: center;
+  line-height: 1;
+  width: 1.2rem;
+}
+
+.author__profile-links .author__profile-link-label {
+  line-height: 1.2;
+}
+
 .home-hero {
   isolation: isolate;
   margin: 0 auto;

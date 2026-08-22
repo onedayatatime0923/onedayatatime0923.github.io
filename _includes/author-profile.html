@@ -26,15 +26,15 @@
         {% if author.employer %}
           <li class="author__meta-item" itemprop="affiliation"><i class="fa-solid fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer }}</li>
         {% endif %}
-        {% if author.email %}
-          <li><a href="mailto:{{ author.email }}" itemprop="email"><i class="fa-solid fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
-        {% endif %}
       </ul>
     </div>
 
     <div class="author__urls-wrapper">
-      <ul class="author__urls social-icons">
+      <ul class="author__urls social-icons author__profile-links">
       <!-- Font Awesome icons / Biographic information  -->
+      {% if author.email %}
+        <li class="author__profile-link-item"><a class="author__profile-link" href="mailto:{{ author.email }}" itemprop="email"><i class="author__profile-link-icon fa-solid fa-fw fa-envelope" aria-hidden="true"></i><span class="author__profile-link-label">{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</span></a></li>
+      {% endif %}
       {% if author.uri %}
         <li><a href="{{ author.uri }}"><i class="fa-solid fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
       {% endif %}
@@ -47,7 +47,7 @@
         <li><a href="{{ author.arxiv }}"><i class="ai ai-arxiv ai-fw icon-pad-right"></i>arXiv</a></li>
       {% endif %}      
       {% if author.googlescholar %}
-        <li><a href="{{ author.googlescholar }}"><i class="ai ai-google-scholar ai-fw icon-pad-right"></i>Google Scholar</a></li>
+        <li class="author__profile-link-item"><a class="author__profile-link" href="{{ author.googlescholar }}"><i class="author__profile-link-icon ai ai-google-scholar ai-fw" aria-hidden="true"></i><span class="author__profile-link-label">Google Scholar</span></a></li>
       {% endif %}
       {% if author.semantic %}
         <li><a href="{{ author.semantic }}"><i class="ai ai-semantic-scholar ai-fw icon-pad-right"></i>Semantic Scholar</a></li>
@@ -82,7 +82,7 @@
         <li><a href="https://dribbble.com/{{ author.dribbble }}"><i class="fab fa-fw fa-dribbble icon-pad-right" aria-hidden="true"></i>Dribbble</a></li>
       {% endif %}      
       {% if author.github %}
-        <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>GitHub</a></li>
+        <li class="author__profile-link-item"><a class="author__profile-link" href="https://github.com/{{ author.github }}"><i class="author__profile-link-icon fab fa-fw fa-github" aria-hidden="true"></i><span class="author__profile-link-label">GitHub</span></a></li>
       {% endif %}
       {% if author.kaggle %}
         <li><a href="https://kaggle.com/{{ author.kaggle }}"><i class="fab fa-fw fa-kaggle icon-pad-right" aria-hidden="true"></i>Kaggle</a></li>
@@ -123,7 +123,7 @@
         <li><a href="https://last.fm/user/{{ author.lastfm }}"><i class="fab fa-fw fa-lastfm icon-pad-right" aria-hidden="true"></i>Last.fm</a></li>
       {% endif %}      
       {% if author.linkedin %}
-        <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
+        <li class="author__profile-link-item"><a class="author__profile-link" href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="author__profile-link-icon fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="author__profile-link-label">LinkedIn</span></a></li>
       {% endif %}      
       {% if author.mastodon %}
         <li><a href="{{ author.mastodon }}"><i class="fab fa-fw fa-mastodon icon-pad-right" aria-hidden="true"></i>Mastodon</a></li>
