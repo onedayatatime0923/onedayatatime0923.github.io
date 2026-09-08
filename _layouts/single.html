@@ -17,11 +17,11 @@ layout: default
 <div id="main" role="main">
   {% include sidebar.html %}
 
-  <article class="page" itemscope itemtype="https://schema.org/{% if page.collection == 'publications' %}ScholarlyArticle{% else %}CreativeWork{% endif %}">
+  <article id="content" tabindex="-1" class="page" itemscope itemtype="https://schema.org/{% if page.collection == 'publications' %}ScholarlyArticle{% else %}CreativeWork{% endif %}">
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
-    {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date: "%B %d, %Y" }}">{% endif %}
+    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
+    {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date_to_xmlschema }}">{% endif %}
 
     <div class="page__inner-wrap">
       {% unless page.header.overlay_color or page.header.overlay_image %}
@@ -56,10 +56,11 @@ layout: default
         {{ content }}
 
         {% if page.collection == 'publications' and page.paperurl %}
-          <div class="publication-actions" aria-label="Publication links">
+          <div class="publication-actions" role="group" aria-label="Publication links">
             <a href="{{ page.paperurl }}" class="btn btn--primary">Read the paper</a>
-            {% if page.arxiv %}<a href="{{ page.arxiv }}" class="btn btn--secondary">arXiv</a>{% endif %}
-            {% if page.doi %}<a href="https://doi.org/{{ page.doi }}" class="btn btn--secondary">DOI</a>{% endif %}
+            {% if page.arxiv and page.arxiv != page.paperurl %}<a href="{{ page.arxiv }}" class="btn btn--secondary">arXiv</a>{% endif %}
+            {% assign doi_url = page.doi | prepend: 'https://doi.org/' %}
+            {% if page.doi and page.paperurl != doi_url %}<a href="{{ doi_url }}" class="btn btn--secondary">DOI</a>{% endif %}
           </div>
         {% elsif page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>

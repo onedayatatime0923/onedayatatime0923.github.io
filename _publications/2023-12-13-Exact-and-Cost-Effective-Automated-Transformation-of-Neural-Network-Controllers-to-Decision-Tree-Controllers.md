@@ -8,8 +8,8 @@ publication_type: "Conference paper"
 authors: "Kevin Chang, Nathan Dahlin, Rahul Jain, and Pierluigi Nuzzo"
 summary: "An automated, equivalence-preserving conversion from ReLU neural controllers to verification-friendly soft decision trees."
 description: "An exact and cost-effective transformation from discrete-output neural-network controllers to soft decision trees, evaluated on standard control benchmarks."
-paperurl: "https://arxiv.org/abs/2304.06049"
-arxiv: "https://arxiv.org/abs/2304.06049"
+paperurl: "https://arxiv.org/abs/2304.06049v2"
+arxiv: "https://arxiv.org/abs/2304.06049v2"
 ---
 
 This paper introduces an automated procedure for converting discrete-output ReLU neural-network controllers into exactly equivalent soft decision trees. The construction preserves controller behavior while pruning redundant branches to control the cost of the resulting representation.

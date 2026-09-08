@@ -11,7 +11,7 @@ redirect_from:
 
 <section class="home-hero">
   <div class="home-hero__visual" aria-hidden="true">
-    <img src="{{ '/images/research-hero.png' | relative_url }}" alt="">
+    <img src="{{ '/images/research-hero.webp' | relative_url }}" width="1800" height="1100" alt="" decoding="async">
   </div>
   <p class="home-hero__eyebrow">UC Berkeley EECS · Formal Methods · Intelligent Systems</p>
   <h1 class="home-hero__title">Building autonomy<br>we can reason about.</h1>
@@ -19,7 +19,7 @@ redirect_from:
   <div class="home-actions">
     <a class="btn btn--primary" href="#research">Explore my research</a>
     <a class="btn btn--secondary" href="{{ '/publications/' | relative_url }}">View publications</a>
-    <a class="btn btn--secondary" href="{{ '/files/cv/resume.pdf' | relative_url }}">Download CV</a>
+    <a class="btn btn--secondary" href="{{ '/files/cv/resume.pdf' | relative_url }}" download="Kevin-Chang-CV.pdf">Download CV</a>
   </div>
 </section>
 

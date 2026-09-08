@@ -61,10 +61,12 @@
       <p class="archive__item-meta"><i>{{ post.venue }}</i> · {{ display_year }}</p>
       {% if post.summary %}<p class="archive__item-summary">{{ post.summary }}</p>{% endif %}
       {% if post.paperurl %}
-        <div class="archive__item-links" aria-label="Links for {{ title | strip_html }}">
+        <div class="archive__item-links" role="group" aria-label="Links for {{ title | strip_html | escape_once }}">
           <a href="{{ base_path }}{{ post.url }}">Overview</a>
           <a href="{{ post.paperurl }}">Paper</a>
-          {% if post.doi %}<a href="https://doi.org/{{ post.doi }}">DOI</a>{% endif %}
+          {% if post.arxiv and post.arxiv != post.paperurl %}<a href="{{ post.arxiv }}">arXiv</a>{% endif %}
+          {% assign doi_url = post.doi | prepend: 'https://doi.org/' %}
+          {% if post.doi and post.paperurl != doi_url %}<a href="{{ doi_url }}">DOI</a>{% endif %}
         </div>
       {% endif %}
     {% elsif post.date %}

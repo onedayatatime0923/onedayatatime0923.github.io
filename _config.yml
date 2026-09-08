@@ -23,7 +23,7 @@ repository               : "onedayatatime0923/onedayatatime0923.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile-avatar.png"
+  avatar           : "profile-avatar.webp"
   name             : "Kevin Chiaming Chang"
   pronouns         : # example: "she/her"  
   bio              : "Ph.D. candidate working at the intersection of formal methods, control, and machine learning."

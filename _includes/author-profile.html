@@ -8,9 +8,9 @@
   <div class="author-card">
     <div class="author__avatar">
       {% if author.avatar contains "://" %}
-        <img src="{{ author.avatar }}" alt="Portrait of {{ author.name }}" fetchpriority="high" itemprop="image" />
+        <img src="{{ author.avatar }}" alt="Portrait of {{ author.name }}" width="640" height="640" fetchpriority="high" itemprop="image" />
       {% else %}
-        <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" alt="Portrait of {{ author.name }}" fetchpriority="high" itemprop="image" />
+        <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" alt="Portrait of {{ author.name }}" width="640" height="640" fetchpriority="high" itemprop="image" />
       {% endif %}
     </div>
 

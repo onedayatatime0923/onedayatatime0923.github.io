@@ -25,4 +25,4 @@ The transformation preserves the controller's input-output behavior, so properti
 - Establishes an exact equivalence result for discrete-output neural-network and soft decision-tree controllers.
 - Develops an automated transformation that removes redundant branches during construction.
 - Evaluates the method on MountainCar, CartPole, and CarRacing controllers.
-- Demonstrates verification-time improvements of up to 20x on the evaluated benchmarks.
+- Reports verification-time improvements of up to 21x on MountainCar and 2x on CartPole.

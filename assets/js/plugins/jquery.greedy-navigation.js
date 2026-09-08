@@ -13,9 +13,17 @@ var $hlinks = $('#site-nav .hidden-links');
 
 var breaks = [];
 
+function closeNav() {
+  $hlinks.addClass('hidden');
+  $btn.removeClass('close').attr({
+    'aria-expanded': 'false',
+    'aria-label': 'Open navigation menu'
+  });
+}
+
 function updateNav() {
 
-  var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
+  var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.outerWidth() - 16;
 
   // The visible list is overflowing the nav
   if ($vlinks.width() > availableSpace) {
@@ -27,10 +35,9 @@ function updateNav() {
       // Move item to the hidden list
       $vlinks.children("*:not(.persist)").last().prependTo($hlinks);
 
-      availableSpace = $btn.hasClass("hidden") ? $nav.width() : $nav.width() - $btn.width() - 30;
-
       // Show the dropdown btn
       $btn.removeClass("hidden");
+      availableSpace = $nav.width() - $btn.outerWidth() - 16;
     }
 
     // The visible list is not overflowing
@@ -50,23 +57,15 @@ function updateNav() {
     // Hide the dropdown btn if hidden list is empty
     if (breaks.length < 1) {
       $btn.addClass('hidden');
-      $btn.removeClass('close');
-      $btn.attr('aria-expanded', 'false');
-      $hlinks.addClass('hidden');
+      closeNav();
     }
   }
 
   // Keep counter updated
   $btn.attr("count", breaks.length);
 
-  // update masthead height and the body/sidebar top padding
-  var mastheadHeight = $('.masthead').height();
-  $('body').css('padding-top', mastheadHeight + 'px');
-  if ($(".author__urls-wrapper button").is(":visible")) {
-    $(".sidebar").css("padding-top", "");
-  } else {
-    $(".sidebar").css("padding-top", mastheadHeight + "px");
-  }
+  // Share the actual header height with sticky positioning and anchor offsets.
+  document.documentElement.style.setProperty('--masthead-height', $('.masthead').outerHeight() + 'px');
 
 }
 
@@ -82,9 +81,37 @@ if (screen.orientation && screen.orientation.addEventListener) {
 }
 
 $btn.on('click', function () {
-  $hlinks.toggleClass('hidden');
-  $(this).toggleClass('close');
-  $(this).attr('aria-expanded', !$hlinks.hasClass('hidden'));
+  var isOpening = $hlinks.hasClass('hidden');
+  $hlinks.toggleClass('hidden', !isOpening);
+  $(this).toggleClass('close', isOpening).attr({
+    'aria-expanded': String(isOpening),
+    'aria-label': isOpening ? 'Close navigation menu' : 'Open navigation menu'
+  });
+});
+
+$nav.on('keydown', function (event) {
+  if (event.key === 'Escape' && !$hlinks.hasClass('hidden')) {
+    closeNav();
+    $btn.trigger('focus');
+    event.preventDefault();
+  }
+});
+
+$(document).on('click focusin', function (event) {
+  if (!$nav[0].contains(event.target)) closeNav();
+});
+
+$hlinks.on('click', 'a', function () {
+  closeNav();
 });
 
 updateNav();
+if (document.fonts && document.fonts.ready) {
+  document.fonts.ready.then(updateNav);
+}
+
+if (window.ResizeObserver) {
+  new ResizeObserver(function () {
+    document.documentElement.style.setProperty('--masthead-height', $('.masthead').outerHeight() + 'px');
+  }).observe(document.querySelector('.masthead'));
+}

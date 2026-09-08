@@ -3,6 +3,7 @@
    ========================================================================== */
 
 :root {
+  --masthead-height: 70px;
   --berkeley-blue: #003262;
   --berkeley-gold: #fdb515;
   --berkeley-gold-soft: rgba(253, 181, 21, 0.14);
@@ -37,7 +38,11 @@
 body {
   background: var(--canvas);
   color: var(--ink);
-  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: var(--masthead-height);
+  padding-bottom: 0;
 }
 
 html {
@@ -72,8 +77,9 @@ button:focus-visible {
   outline-offset: 3px;
 }
 
-section[id] {
-  scroll-margin-top: 6rem;
+section[id],
+#content {
+  scroll-margin-top: calc(var(--masthead-height) + 1rem);
 }
 
 body:before {
@@ -176,6 +182,7 @@ a:focus {
   display: inline-flex;
   flex-direction: row;
   gap: 0.65rem;
+  max-width: calc(100vw - 7rem);
 }
 
 .site-brand__text {
@@ -210,6 +217,10 @@ a:focus {
   transition: background-color 0.18s ease, color 0.18s ease;
 }
 
+.greedy-nav .visible-links {
+  width: max-content;
+}
+
 .greedy-nav a:hover,
 .greedy-nav a:focus {
   background: var(--nav-hover);
@@ -238,6 +249,16 @@ a:focus {
   border-radius: 0.75rem;
 }
 
+.greedy-nav button:focus-visible {
+  outline: 3px solid var(--berkeley-gold);
+  outline-offset: 3px;
+}
+
+.no-js .greedy-nav .visible-links,
+.no-js .greedy-nav .visible-links li {
+  display: inline-block;
+}
+
 .greedy-nav .hidden-links {
   background: rgba(16, 15, 14, 0.96);
   border: 1px solid var(--line);
@@ -264,7 +285,9 @@ a:focus {
 }
 
 #main {
+  flex: 1 0 auto;
   margin-top: 2.2rem;
+  width: 100%;
 }
 
 @media screen and (min-width: $sidebar-screen-min-width) {
@@ -273,6 +296,11 @@ a:focus {
     display: grid;
     gap: 2rem;
     grid-template-columns: 18rem minmax(0, 1fr);
+  }
+
+  #main:has(.sidebar)::before,
+  #main:has(.sidebar)::after {
+    display: none;
   }
 }
 
@@ -332,7 +360,7 @@ a:focus {
 
   @media screen and (min-width: $sidebar-screen-min-width) {
     position: sticky;
-    top: 5.5rem;
+    top: calc(var(--masthead-height) + 1.25rem);
     height: auto;
     max-width: none;
     overflow-y: visible;
@@ -402,7 +430,7 @@ a:focus {
   text-transform: uppercase;
 }
 
-.author__name {
+.sidebar .author__name {
   font-family: $fraunces;
   font-size: 1.5rem;
 }
@@ -410,6 +438,11 @@ a:focus {
 .author__bio {
   color: var(--muted);
   line-height: 1.7;
+}
+
+.author__content {
+  display: block;
+  padding: 0;
 }
 
 .author__meta,
@@ -681,7 +714,7 @@ a:focus {
 .home-section--split {
   display: grid;
   gap: 3.5rem;
-  grid-template-columns: minmax(0, 0.9fr) minmax(20rem, 1.1fr);
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
 }
 
 .text-link {
@@ -908,11 +941,14 @@ a:focus {
 }
 
 .archive__item-links a {
+  align-items: center;
   border: 1px solid var(--line);
   border-radius: 999px;
   color: var(--accent-strong) !important;
-  font-size: 0.72rem;
+  display: inline-flex;
+  font-size: 0.875rem;
   font-weight: 800;
+  min-height: 2.75rem;
   padding: 0.38rem 0.62rem;
   text-decoration: none;
 }
@@ -927,6 +963,10 @@ a:focus {
 .publication-actions,
 .error-actions {
   margin-top: 1.8rem;
+}
+
+.page__content .btn {
+  text-decoration: none;
 }
 
 .publication-authors {
@@ -944,6 +984,8 @@ a:focus {
   background: var(--footer-bg);
   border-top: 0;
   color: var(--muted);
+  float: none;
+  position: static;
 }
 
 .page__footer footer {
@@ -994,6 +1036,115 @@ a:focus {
   padding-top: 1rem;
 }
 
+@media screen and (max-width: 1023px) {
+  .page,
+  .archive {
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  #main {
+    margin-top: 1.5rem;
+  }
+
+  .sidebar {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .author-card {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 88px minmax(0, 1fr);
+    text-align: left;
+  }
+
+  .author__avatar img {
+    height: 88px;
+    max-width: 88px;
+    padding: 0;
+    width: 88px;
+  }
+
+  .author__eyebrow {
+    margin-top: 0;
+  }
+
+  .sidebar .author__name {
+    font-size: 1.25rem;
+    margin: 0 0 0.5rem;
+  }
+
+  .author__bio {
+    margin: 0 0 0.75rem;
+  }
+
+  .sidebar .author__bio,
+  .sidebar .author__meta li {
+    font-size: 0.875rem;
+  }
+
+  .author__meta-item {
+    justify-content: flex-start;
+  }
+
+  .author__urls-wrapper {
+    grid-column: 1 / -1;
+    margin-top: 0;
+  }
+
+  .author__profile-links {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .author__profile-links .author__profile-link-item,
+  .author__profile-links a {
+    margin-bottom: 0;
+  }
+
+  .research-grid,
+  .home-section--split {
+    grid-template-columns: 1fr;
+  }
+
+  .research-grid {
+    gap: 0.75rem;
+  }
+
+  .research-card {
+    border-radius: 0.85rem !important;
+    min-height: auto;
+  }
+
+  .research-card__number {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .research-grid,
+  .home-section--split {
+    grid-template-columns: 1fr;
+  }
+
+  .research-grid {
+    gap: 0.75rem;
+  }
+
+  .research-card {
+    border-radius: 0.85rem !important;
+    min-height: auto;
+  }
+
+  .research-card__number {
+    margin-bottom: 1.5rem;
+  }
+}
+
 @include breakpoint(max-width $medium) {
   .page,
   .archive {
@@ -1013,7 +1164,7 @@ a:focus {
   .home-hero {
     min-height: auto;
     padding-bottom: 4rem;
-    padding-top: 4.5rem;
+    padding-top: 2rem;
   }
 
   .home-hero__visual {
@@ -1076,6 +1227,7 @@ a:focus {
 
   .home-contact {
     margin-bottom: 5rem;
+    padding: 1.5rem;
   }
 
   .archive__item-heading {
@@ -1085,6 +1237,10 @@ a:focus {
   .archive__item-year {
     display: inline-flex;
     margin-bottom: 0.7rem;
+  }
+
+  .page__footer-follow .social-icons {
+    justify-content: flex-start;
   }
 }
 
@@ -1098,5 +1254,8 @@ a:focus {
   *::after {
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important;
   }
 }
