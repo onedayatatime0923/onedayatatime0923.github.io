@@ -259,6 +259,10 @@ a:focus {
   display: inline-block;
 }
 
+.no-js .greedy-nav .visible-links {
+  width: auto;
+}
+
 .greedy-nav .hidden-links {
   background: rgba(16, 15, 14, 0.96);
   border: 1px solid var(--line);
@@ -1037,6 +1041,10 @@ a:focus {
 }
 
 @media screen and (max-width: 1023px) {
+  .masthead__menu-item--lg {
+    padding-right: 0;
+  }
+
   .page,
   .archive {
     float: none;
