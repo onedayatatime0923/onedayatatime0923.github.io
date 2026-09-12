@@ -133,6 +133,7 @@ include:
   - _pages
   - files
 exclude:
+  - VISA.md
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
