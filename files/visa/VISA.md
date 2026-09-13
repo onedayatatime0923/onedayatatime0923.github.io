@@ -9,14 +9,15 @@ Private notes; excluded from website output. Offer figures below were quoted Sep
 - **Memberships:** IEEE and ACM; grades unspecified.
 - **Career:** Industry is the current plan. A postdoc is only being explored; no application or commitment is established. Any petition must reflect actual intentions.
 - **Apple:** Job offer with a June start, understood as **June 2027**. H-1B process just started; selection, filing, and approval are unconfirmed.
-- **Goal:** Explore Premium Processing and an I-140 decision before graduation, while clarifying the separate green card and work-authorization steps.
+- **Timing preference:** Currently leans toward Premium Processing, focusing on the earliest filing date with available master's evidence and timelines with/without an RFE before May 2027. Clarify the separate green card and work-authorization steps.
 
-## Draft for Johnson's review
+## Johnson review and Green Maple inquiry
 
 - **From / to:** kevin.cm.chang@gmail.com → Johnson Tu (Cheng-Yin TU), tuchengyin.us@gmail.com; address verified in the onedayatatime account.
 - **Subject:** For review: EB-2 NIW inquiry to Green Maple Law Group.
-- **Status:** Saved, unsent; `files/cv/resume.pdf` attached. Draft asks Johnson to review the enclosed inquiry to **info@greenmaplelaw.com**. Neither recipient has been sent it.
-- **Questions:** NIW/EB-1A eligibility; degree evidence; industry versus postdoc plans; Premium Processing with/without an RFE; Apple H-1B coordination; fees and refund terms.
+- **Johnson status:** Sent by Kevin September 12, 2026, at 8:29 p.m., with `files/cv/resume.pdf` attached. The assistant had prepared an unsent draft for his review.
+- **Green Maple status:** Saved, unsent draft from kevin.cm.chang@gmail.com to **info@greenmaplelaw.com**, with `resume.pdf` (53 KB) attached. Subject: **EB-2 NIW Evaluation Request — UC Berkeley PhD Student, May 2027 Graduation**. Original inquiry retained; Johnson's review note removed. Additional questions from the later timing discussion were not added.
+- **Questions:** NIW/EB-1A eligibility; master's evidence; industry versus postdoc plans; PP with/without an RFE; Apple H-1B coordination; fees and refund terms.
 
 ## Chen's offer and agreement
 
@@ -54,7 +55,7 @@ The [April acknowledgment](https://mail.google.com/mail/u/0/#search/in%3Aanywher
 
 ## Next steps
 
-1. Review the Green Maple inquiry with Johnson before sending it to the firm.
+1. Review and finalize the Green Maple inquiry before sending it to the firm.
 2. Obtain written clarification of how the disclosed Apple/industry plan affects the petition and Chen's guarantee, including any later refiling.
 3. Confirm acceptable master's evidence, preparation/filing timing, and realistic PP/RFE scenarios before May 2027.
 4. Ask counsel how to coordinate NIW with Apple's H-1B process and June start; confirm status/work authorization before considering discontinuing H-1B.
