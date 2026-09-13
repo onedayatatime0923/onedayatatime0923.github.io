@@ -1,64 +1,61 @@
 # Visa and immigration notes
 
-Local summary. Excluded from Jekyll website output. Last updated September 12, 2026.
+Private notes; excluded from website output. Offer figures below were quoted September 12, 2026.
 
-## Current circumstances and preferences
+## Current situation
 
-- **Email:** kevin.cm.chang@gmail.com.
-- **Progress:** Kevin reports completing Chen's updated questionnaire and uploading his latest CV; he wishes to begin the NIW process.
-- **Education:** UC Berkeley master's requirements in Electrical Engineering and Computer Sciences completed; diploma expected in a few months. Expected Ph.D. graduation: **May 2027**.
-- **Memberships:** IEEE and ACM; membership grades not specified.
-- **Career:** Currently plans to work in industry. Asked about an academic/postdoctoral option and accurate wording for an eventual industry transition; no postdoc application or commitment has been established.
-- **Timing preference:** Interested in USCIS Premium Processing and an I-140 decision before graduation, with clarification of the separate remaining green card timeline.
+- **Account:** kevin.cm.chang@gmail.com. Chen's updated questionnaire and CV upload are complete; Kevin wants to begin NIW preparation.
+- **Education:** UC Berkeley EECS master's requirements completed; diploma pending for a few months. Ph.D. graduation expected **May 2027**.
+- **Memberships:** IEEE and ACM; grades unspecified.
+- **Career:** Industry is the current plan. A postdoc is only being explored; no application or commitment is established. Any petition must reflect actual intentions.
+- **Apple:** Job offer with a June start, understood as **June 2027**. H-1B process just started; selection, filing, and approval are unconfirmed.
+- **Goal:** Explore Premium Processing and an I-140 decision before graduation, while clarifying the separate green card and work-authorization steps.
 
-## Chen's September 12, 2026 response
+## Draft for Johnson's review
 
-**Source:** Victoria Chen / North America Immigration Law Group, attorneys@chenassociates.com, received 5:40 a.m. as displayed in Gmail. Subject: “NIW Approval or Refund Retainer | North America Immigration Law Group.” [Read email](https://mail.google.com/mail/u/0/#inbox/FMfcgzQhWTkJNXSjSQMqTZxFqtqqXhZB).
+- **From / to:** kevin.cm.chang@gmail.com → Johnson Tu (Cheng-Yin TU), tuchengyin.us@gmail.com; address verified in the onedayatatime account.
+- **Subject:** For review: EB-2 NIW inquiry to Green Maple Law Group.
+- **Status:** Saved, unsent; `files/cv/resume.pdf` attached. Draft asks Johnson to review the enclosed inquiry to **info@greenmaplelaw.com**. Neither recipient has been sent it.
+- **Questions:** NIW/EB-1A eligibility; degree evidence; industry versus postdoc plans; Premium Processing with/without an RFE; Apple H-1B coordination; fees and refund terms.
 
-The following records the firm's advice and quoted terms, not independently verified legal guidance. Linked attachments and the retainer have not been reviewed.
+## Chen's offer and agreement
 
-- **Start now:** Preparation can begin now; the specific answer on master's documentation says to file after receiving the diploma. It does not confirm whether a completion letter or transcript can substitute.
-- **Academic option:** A job offer is not required to begin preparation. Evidence will be discussed during preparation. The firm can evaluate an academic research endeavor if Kevin is willing to pursue that path; a later move to industry would require reevaluation.
-- **Category:** The firm recommends EB-2 NIW over EB-1. It states that EB-2 is available for Taiwan under the September 2026 Visa Bulletin while noting retrogression risk. This is a date-specific statement from the email.
-- **Ph.D. timing:** Waiting for Ph.D. conferral may strengthen the petition but delays filing and the priority date. Filing earlier is offered under the second-denial refund arrangement, subject to the unresolved master's-documentation point.
-- **Evaluation figures:** The firm cites at least five peer-reviewed publications, 22 citations, and a forthcoming December 2026 publication; these figures were not independently checked.
+Source: Victoria Chen / North America Immigration Law Group, [September 12 email](https://mail.google.com/mail/u/0/#inbox/FMfcgzQhWTkJNXSjSQMqTZxFqtqqXhZB), and the reviewed 17-page `Contract_G NIW_6800_Second-denial Refund Guarantee.pdf` in `/home/kevin-pc/Downloads/`. These are the firm's quoted terms, not independent legal conclusions.
 
-## Quoted fees and timing
+- **Preparation:** May begin now; Chen says to file after receiving the master's diploma. Whether a completion letter/transcript suffices remains unresolved. No academic job offer is needed to begin preparation.
+- **Scope:** EB-2 NIW I-140 preparation, applicable RFE/NOID responses, and appeals if applicable. I-485/consular representation and status maintenance are excluded. **I-140 approval alone provides no status or work authorization.**
+- **Timing:** Overall preparation quoted at 1–4 months. Premium Processing's quoted **45 business days** concerns initial action, not guaranteed approval or green card completion before May 2027. An RFE can extend the timeline.
+- **Validity:** 30 days from the email; signature and initial payment required within that window, subject to full evaluation. No agreement signed or payment made in this workflow.
 
-| Service | Support letters | Standard attorney fee | Paid upfront | Drafting time |
-| --- | ---: | ---: | ---: | --- |
-| Accelerated | 0 | $6,800 | $6,200 | 10 business days |
-| Balanced | 2 | $7,100 | $6,500 | 15 business days |
-| Comprehensive | 4 | $7,400 | $6,800 | 15 business days |
+### Fees
 
-Drafting begins after required information is received; letter-based options also require confirmed recommenders. Overall preparation is quoted at **1–4 months**. Within preparation, assembly and submission take about one week after petition finalization and receipt of all supporting documents. Revisions normally take 1–3 business days. All options require six answers and Proposed Endeavor Statement information, with additional information for support letters where applicable.
+| Support letters | Standard attorney fee | Discounted fee | Initial drafting |
+| ---: | ---: | ---: | --- |
+| 0 | $6,800 | $6,200 | 10 business days |
+| 2 | $7,100 | $6,500 | 15 business days |
+| 4 | $7,400 | $6,800 | 15 business days |
 
-The email quotes regular I-140 processing at over one year, Premium Processing at **45 business days for initial processing**, and I-485 approval at approximately **10–12 months for most of the firm's clients**, with variability. It does **not** promise an I-140 decision or full green card completion before May 2027.
+Drafting starts after required materials are confirmed; these are not filing deadlines. Standard plans start at $4,200; discounted plans at $6,200. Remaining balances are due at the first petition-letter draft. Stripe: 20 × $350, plus $300/$600 for 2/4 letters; includes a nonrefundable $200 administration fee.
 
-Payment options are upfront with a $600 discount, two installments, or up to 20 installments through Stripe Subscription. Government filing fees, Premium Processing fees, and later green card representation costs are not itemized.
+Separate quoted government fees: **$715 I-140 + $300 or $600 asylum fee unless exempt + optional $2,965 Premium Processing**. Confirm applicable/current amounts. Later green card costs and refiling fees are additional. Three revisions per drafted letter are included; certain further/incomplete-request revisions may cost $300 each.
 
-## Second-Denial Refund Guarantee
+### Refund conditions
 
-If the initial petition is denied, the firm offers a second petition without an additional attorney fee. If both are denied, it promises a full refund of the attorney fee. The email describes the second filing both as occurring after Ph.D. conferral and as subject to the attorneys' assessment of when the strengthened record is ready. Exact conditions and non-attorney costs require contract review.
+- **First qualifying denial:** Refile without another attorney fee; government fees paid again. **Second qualifying denial:** Request refund of attorney fees, processed within seven business days; administration fee excluded.
+- **Industry risk (p. 2):** A material move from academia/research to industry may remove the guarantee at the firm's discretion. No express industry-R&D exception or clear endpoint. This contractual condition is separate from immigration consequences.
+- **Refiling:** Email suggests after Ph.D. conferral/when the record improves; contract specifies neither a Ph.D. requirement nor a deadline.
+- **Limitations:** Cooperation and applicable RFE/NOID responses are required. Withdrawal, abandonment, rejection, or noncooperation-related denial do not qualify. Error-correction efforts or further appeals/refilings can delay refunds without a stated outer deadline.
+- **Early termination (pp. 11–12):** Deductions of $500, $30/month, $50/substantive communication, and $150/scheduled consultation; no early-termination attorney-fee refund after letter drafting. Exact cutoff, refund deadline, and unpaid Stripe obligations need clarification.
+- **Other terms:** Guarantee may be reevaluated after one year without meaningful progress and failure to sustain evaluated credentials. If lost through reevaluation, termination before substantive preparation permits a full refund. Written changes require both parties' signatures. Michigan law and binding arbitration apply after complaint/mediation steps.
 
-The offer applies to all three options, is valid for **30 days from the email**, and remains subject to comprehensive review of questionnaire information, with possible changes to fees or service category. No contract was signed, payment made, or reply sent as part of the September 12 review.
+## Offer comparison
 
-## Open questions and next steps
+The [April acknowledgment](https://mail.google.com/mail/u/0/#search/in%3Aanywhere+from%3Achenassociates.com+after%3A2026%2F04%2F01+before%3A2026%2F05%2F01/FMfcgzQgLPLKXLNXJlqRnndPwBJmPkDx) and subsequent evaluation do **not** establish an individualized first-denial refund or NIW price. September's offer explicitly requires two denials. Chen's [public FAQ](https://www.wegreened.com/niw/About-Our-Firm) describes first-denial refunds for eligible clients; Kevin's eligibility for that tier is unconfirmed. No reliable frequency of second-denial offers was found.
 
-1. Confirm whether the later “file as soon as retained” language refers to filing before Ph.D. conferral only; reconcile it with the instruction to wait for the master's diploma.
-2. Confirm acceptable master's evidence and the earliest filing date.
-3. Establish an accurate proposed endeavor reflecting Kevin's career intentions, the required evidence, and what an industry transition would mean for reevaluation.
-4. Review the linked `Contract_G NIW_6800_Second-denial Refund Guarantee.pdf` for second-filing timing, refund conditions, exclusions, and all additional fees.
-5. Obtain a case-specific estimate for an I-140 action before May 2027 and the separate remaining green card steps; choose a service option after clarifying the terms.
+## Next steps
 
-## Linked attachments (listed, not reviewed)
-
-1. Case prep chart_V2.pdf
-2. Chen Logo.jpg
-3. Contract_G NIW_6800_Second-denial Refund Guarantee.pdf
-4. Q＆A for Potential I-140 Clients_Traditional Chinese_v5.pdf
-5. Q＆A for Potential I-140 Clients_v5.pdf
-6. Green Card Application Process Overview and Timeline_Traditional Chinese_v6.pdf
-7. Green Card Application Process Overview and Timeline_v8.pdf
-
-An online signing link is also present in the source email.
+1. Review the Green Maple inquiry with Johnson before sending it to the firm.
+2. Obtain written clarification of how the disclosed Apple/industry plan affects the petition and Chen's guarantee, including any later refiling.
+3. Confirm acceptable master's evidence, preparation/filing timing, and realistic PP/RFE scenarios before May 2027.
+4. Ask counsel how to coordinate NIW with Apple's H-1B process and June start; confirm status/work authorization before considering discontinuing H-1B.
+5. Resolve refiling/refund deadlines, first-denial eligibility, termination/installment terms, and total costs before retaining counsel.
