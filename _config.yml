@@ -151,6 +151,7 @@ exclude:
   - Dockerfile
   - docker-compose.yaml
   - files/cover_letter
+  - files/visa
   - files/cv/README.md
   - files/cv/awesome-cv.cls
   - files/cv/fonts
